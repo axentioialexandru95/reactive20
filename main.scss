@@ -1,0 +1,63 @@
+.row-50{
+    padding: 0 50px;
+}
+.scrollspy{
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    a{
+        color: black;
+    }
+    .active{
+        color: red;
+    }
+}
+.uk-active{
+    a{
+
+        color: red;
+    }
+}
+.hero__background{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    height: 100vh;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    &__slider-arrows{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(2);
+        color: red;
+    }
+    &__text-left{
+        margin-top: 30%;
+        h1,h2{
+            color: red;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    &__text-right{
+        h1{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        max-width: 400px;
+        margin-top: auto;
+        margin-left: auto;
+    }
+}
+.about{
+    height: 100vh;
+}

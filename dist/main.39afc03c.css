@@ -1,0 +1,70 @@
+.row-50 {
+  padding: 0 50px;
+}
+
+.scrollspy {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.scrollspy a {
+  color: black;
+}
+.scrollspy .active {
+  color: red;
+}
+
+.uk-active a {
+  color: red;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+}
+.hero__slider-arrows {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(2);
+  color: red;
+}
+.hero__text-left {
+  margin-top: 30%;
+}
+.hero__text-left h1, .hero__text-left h2 {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+.hero__text-right {
+  max-width: 400px;
+  margin-top: auto;
+  margin-left: auto;
+}
+.hero__text-right h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
