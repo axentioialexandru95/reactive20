@@ -117,35 +117,47 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"main.js":[function(require,module,exports) {
-var settings = {
-  selectors: {
-    hero: '.hero',
-    heroBackground: '.hero__background'
+})({"images/instagram.png":[function(require,module,exports) {
+module.exports = "/instagram.4b783f94.png";
+},{}],"images/instagram-green.png":[function(require,module,exports) {
+module.exports = "/instagram-green.9358b277.png";
+},{}],"images/facebook-green.png":[function(require,module,exports) {
+module.exports = "/facebook-green.2983a70d.png";
+},{}],"images/facebook.png":[function(require,module,exports) {
+module.exports = "/facebook.1207ba1d.png";
+},{}],"main.js":[function(require,module,exports) {
+"use strict";
+
+var _instagram = _interopRequireDefault(require("./images/instagram.png"));
+
+var _instagramGreen = _interopRequireDefault(require("./images/instagram-green.png"));
+
+var _facebookGreen = _interopRequireDefault(require("./images/facebook-green.png"));
+
+var _facebook = _interopRequireDefault(require("./images/facebook.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var instagramIcons = document.querySelectorAll('.instagram img');
+var facebookIcons = document.querySelectorAll('.facebook img');
+
+var addPngHoverEffectGreen = function addPngHoverEffectGreen(els, image, replace) {
+  for (var i = 0; i < els.length; i++) {
+    var icon = els[i];
+    icon.addEventListener('mouseover', function (evt) {
+      var img = evt.currentTarget;
+      img.setAttribute('src', replace);
+    });
+    icon.addEventListener('mouseleave', function (evt) {
+      var img = evt.currentTarget;
+      img.setAttribute('src', image);
+    });
   }
 };
 
-var selectors = function selectors(selector) {
-  return settings.selectors;
-};
-
-var getEl = function getEl(el) {
-  return document.querySelector(el);
-};
-
-var getEls = function getEls(el) {
-  return document.querySelectorAll(el);
-};
-
-var heroBackground = getEl(selectors().heroBackground);
-var heroImagesArr = heroBackground.attributes.images.value;
-heroImagesArr = heroImagesArr.split(',');
-
-for (var i = 0; i < heroImagesArr.length; i++) {
-  var image = heroImagesArr[i];
-  heroBackground.style.backgroundImage = "url(".concat(image, ")");
-}
-},{}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+addPngHoverEffectGreen(instagramIcons, _instagram.default, _instagramGreen.default);
+addPngHoverEffectGreen(facebookIcons, _facebook.default, _facebookGreen.default);
+},{"./images/instagram.png":"images/instagram.png","./images/instagram-green.png":"images/instagram-green.png","./images/facebook-green.png":"images/facebook-green.png","./images/facebook.png":"images/facebook.png"}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -173,7 +185,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63478" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63179" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

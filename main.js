@@ -1,27 +1,25 @@
-const settings = {
-    selectors: {
-        hero: '.hero',
-        heroBackground: '.hero__background'
+import instagram from './images/instagram.png';
+import instagramGreen from './images/instagram-green.png';
+import facebookGreen from './images/facebook-green.png';
+import facebook from './images/facebook.png';
+
+
+const instagramIcons = document.querySelectorAll('.instagram img');
+const facebookIcons = document.querySelectorAll('.facebook img');
+const addPngHoverEffectGreen = function(els, image, replace){
+    for (let i = 0; i < els.length; i++) {
+        const icon = els[i];
+        icon.addEventListener('mouseover', (evt) => {
+            const img = evt.currentTarget
+            img.setAttribute('src', replace)
+        })
+        icon.addEventListener('mouseleave', (evt) => {
+            const img = evt.currentTarget
+            img.setAttribute('src', image)
+        })
 
     }
 }
-const selectors = function (selector) { 
-    return settings.selectors;
-}
 
-const getEl = function (el) { 
-    return document.querySelector(el);
-}
-const getEls = function (el) {
-    return document.querySelectorAll(el);
-}
-
-const heroBackground = getEl(selectors().heroBackground)
-let heroImagesArr = heroBackground.attributes.images.value;
-heroImagesArr = heroImagesArr.split(','); 
-
-for (let i = 0; i < heroImagesArr.length; i++) {
-    const image = heroImagesArr[i];
-    heroBackground.style.backgroundImage = `url(${image})`;
-    
-}
+addPngHoverEffectGreen(instagramIcons, instagram, instagramGreen);
+addPngHoverEffectGreen(facebookIcons, facebook, facebookGreen);

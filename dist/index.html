@@ -8,71 +8,113 @@
     <link rel="stylesheet" href="/main.39afc03c.css">
   <script src="/uikit.min.2daa7517.js"></script><script src="/main.39afc03c.js"></script></head>
   <body>
-      
     <!-- Scrollspy -->
     <ul class="scrollspy" uk-scrollspy-nav="offset: 150;closest: li; scroll: true">
-        <li><a href="#top">top</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#top"></a></li>
+      <li><a href="#about"></a></li>
+      <li><a href="#portfolio"></a></li>
+      <li><a href="#services"></a></li>
+      <li><a href="#contact"></a></li>
     </ul>
     <!-- Scrollspy -->
     <!-- Navbar -->
-    <nav class="uk-animation-slide-top-small uk-ani uk-navbar-transparent uk-visible@s uk-width-expand uk-position-absolute" uk-navbar="">
-      <div class="row-50 uk-navbar-left uk-background-secondary">
-        <ul class="uk-navbar-nav">
-          <li><a class="uk-logo" href="#top">Logo</a></li>
-          <li><a href=""></a></li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-        </ul>
+    <div class="navbar">
+      <div class="navbar__left-container">
+        <div class="row-50 navbar__links">
+          <div class="navbar__logo navbar__link">
+            <a href="/home">
+              <img src="/logo.236e4034.svg" alt="Reactive20 logo">
+            </a>
+          </div>
+          <div class="navbar__link"><a href="/">Home</a></div>
+          <div class="navbar__link"><a href="#about">About</a></div>
+          <div class="navbar__link"><a href="#portfolio">Portfolio</a></div>
+          <div class="navbar__link"><a href="#services">Services</a></div>
+        </div>
       </div>
-
-      <div class="row-50 uk-navbar-right">
-        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
-          <li>
-            <a class="uk-background-secondary" style="padding: 0 40px;" href="#contact">C</a>
-          </li>
-          <li><a href="#">F</a></li>
-          <li><a href="#">I</a></li>
-        </ul>
+      <div class="navbar__right-container">
+        <div class="navbar__links">
+          <div class="navbar__link"><a href="#services">Services</a></div>
+        </div>
+        <div class="row-50 navbar__links navbar__links--language">
+          <a class="active" href="/en">RO </a>
+          <span>/</span>
+          <a href="/en">EN</a>
+        </div>
       </div>
-    </nav>
+    </div>
 
     <!-- Navbar -->
 
     <!-- Hero -->
     <div class="row-50">
       <div class="hero" id="top">
-        <div class="hero__background" images="https://images.pexels.com/photos/929280/pexels-photo-929280.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260,https://images.pexels.com/photos/929279/pexels-photo-929279.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
-        <div class="hero__slider-arrows">
-            <div class="next">></div>
-            <hr>
-            <div class="prev"><</div>
-        </div>
-        <div class="hero__text-left">
-          <h1>Reactive 20 <span>tm</span></h1>
-          <h2>Creative & new - 2020</h2>
-        </div>
-        <div class="hero__text-right">
-          <h1>Reactive 20</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ea perspiciatis, vitae libero sit culpa hic unde, quae voluptatibus
-            dolorum est magnam magni illum sed odit, dicta illo quam enim!
-          </p>
+        <div class="hero__social-right">
+          <div class="instagram">
+            <img src="/instagram.4b783f94.png" alt="" srcset="">
+          </div>
+          <div class="v-line"></div>
+          <div class="facebook">
+            <img src="/facebook.1207ba1d.png" alt="" srcset="">
+          </div>
         </div>
       </div>
     </div>
     <!-- Hero -->
 
     <!-- About -->
-    <div class="about" id="about"></div>
+    <div class="about row-50 margin-left-30" id="about">
+      <div class="about__text-left">
+        <h1>
+          About <br>
+          Reactive20<span>tm</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          officia repellat amet ut cumque nisi, nobis iure quaerat ipsa aperiam
+          voluptatibus, repellendus incidunt fugit atque hic blanditiis natus
+          dolores quae. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Ullam quos, porro ipsa quisquam voluptas iusto vero. Atque ullam
+          harum nesciunt excepturi, consequatur rerum explicabo placeat dolorem
+          tenetur. Excepturi, ex labore?
+        </p>
+      </div>
+      <div class="about__image-right">
+        <img src="/about-right.a4cfb946.svg" alt="About reactive 20 image">
+      </div>
+    </div>
     <!-- About -->
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio margin-left-30 row-50">
+      <div class="portfolio__grid">
+        <div class="portfolio__column">
+          <h1>Portfolio</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus velit quod facilis ducimus ipsum dignissimos provident at repudiandae totam. A dignissimos quo aliquid perspiciatis asperiores consectetur molestias quae at illo!</p>
+          <img src="/img2.389ea708.png" alt="" srcset="">
+        </div>
+        <div class="portfolio__column">
+          <img src="/img1.23c3679a.png" alt="" srcset="">
+        </div>
+      </div>
+      
+      <div class="portfolio__grid c">
+      </div>
+      
+      <div class="portfolio__grid d">
+        <img src="/img3.8003794a.png" alt="" srcset="">
+      </div>
+      
+      <div class="portfolio__grid e">
+        <img src="/img4.d633fedf.png" alt="" srcset="">
+      </div>
+      
+      <div class="portfolio__grid f">
+        <img src="/img5.5098d641.png" alt="" srcset="">
+      </div>
+    </div>
+    <!-- Portfolio -->
+
+
 
     <script src="/uikit.min.0fdc9a0d.js"></script>
     <script src="/uikit-icons.min.0e694822.js"></script>

@@ -1,25 +1,100 @@
+$green: #5cf291;
+$gray: #c4c4c4;
+
 .row-50{
     padding: 0 50px;
 }
+
+h1{
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    span{
+        font-size: 10px;
+        position: absolute;
+    }
+}
+p{
+    font-size: 24px;
+    line-height: 1.38;
+    color: #191919;
+}
+.navbar{
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    &__left-container, &__right-container{
+        width: fit-content;
+    }
+    &__right-container{
+        display: flex;
+    }
+    &__links{
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__links--language{
+        background: transparent;
+        margin: auto 0;
+        a, span{
+            color: black;
+            margin: auto 2px;
+            transition: 0.2s ease-in;
+            letter-spacing: 6px;
+            &:hover{
+                text-decoration: none;
+                color: $green;
+            }
+        }
+        .active{
+            color: $green;
+        }
+    }
+    &__link{
+        margin: auto 20px;
+        a {
+            color: white;
+            transition: 0.2s ease-in;
+            &:hover{
+                color: $green;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .scrollspy{
     position: fixed;
     top: 50%;
-    left: 50px;
+    left: 0;
     transform: translateY(-50%);
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+    width: fit-content;
+    li{
+        margin-bottom: 100px;
+        width: 15px;
+        height: 5px;
+        background-color: $gray;
+        transition: 0.2s all ease-in-out;
+        cursor: pointer;
+    }
+    .uk-active{
+        background-color: $green;
+        width: 35px;
+    }
     a{
+        width: 50px;
+        height: 5px;
+        content: '';
         color: black;
-    }
-    .active{
-        color: red;
-    }
-}
-.uk-active{
-    a{
-
-        color: red;
     }
 }
 .hero__background{
@@ -28,16 +103,46 @@
     z-index: -1;
     background-size: cover;
     height: 100vh;
+    animate: scale;
 }
 .hero{
     height: 100vh;
     display: flex;
+    &__social-right{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+        .instagram{
+            margin-bottom: 50px;
+            cursor: pointer;
+            &:hover{
+                color: $green;
+            }
+        }
+        .v-line{
+            width: 3px;
+            height: 37px;
+            position: relative;
+            left: 18px;
+            background-color: #191919; 
+        }
+        .facebook{
+            cursor: pointer;
+            position: relative;
+            left: 10px;
+            margin-top: 50px;
+        }
+    }
     &__slider-arrows{
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%) scale(2);
-        color: red;
+        transform: translateY(-50%);
+        color: black;
+        cursor: pointer;
+        font-size: 40px;
     }
     &__text-left{
         margin-top: 30%;
@@ -58,6 +163,36 @@
         margin-left: auto;
     }
 }
-.about{
-    height: 100vh;
+.margin-left-30{
+    margin-left: 30px;
 }
+.about{
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+
+    &__text-left{
+        margin: auto 0;
+        width: 33.3%;
+    }
+    &__image-right{
+        margin: auto 0;
+        width: 66.6%;
+        img{
+            width: 100%;
+        }
+    }
+    margin-bottom: 300px;
+}
+.portfolio{
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &__column{
+        width: 45%;
+    }
+}
+
