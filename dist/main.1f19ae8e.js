@@ -138,25 +138,77 @@ var _facebook = _interopRequireDefault(require("./images/facebook.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var instagramIcons = document.querySelectorAll('.instagram img');
-var facebookIcons = document.querySelectorAll('.facebook img');
+$(document).ready(function () {
+  var instagramIcons = document.querySelectorAll('.instagram img');
+  var facebookIcons = document.querySelectorAll('.facebook img');
 
-var addPngHoverEffectGreen = function addPngHoverEffectGreen(els, image, replace) {
-  for (var i = 0; i < els.length; i++) {
-    var icon = els[i];
-    icon.addEventListener('mouseover', function (evt) {
-      var img = evt.currentTarget;
-      img.setAttribute('src', replace);
-    });
-    icon.addEventListener('mouseleave', function (evt) {
-      var img = evt.currentTarget;
-      img.setAttribute('src', image);
-    });
-  }
-};
+  var addPngHoverEffectGreen = function addPngHoverEffectGreen(els, image, replace) {
+    for (var i = 0; i < els.length; i++) {
+      var icon = els[i];
+      icon.addEventListener('mouseover', function (evt) {
+        var img = evt.currentTarget;
+        img.setAttribute('src', replace);
+      });
+      icon.addEventListener('mouseleave', function (evt) {
+        var img = evt.currentTarget;
+        img.setAttribute('src', image);
+      });
+    }
+  };
 
-addPngHoverEffectGreen(instagramIcons, _instagram.default, _instagramGreen.default);
-addPngHoverEffectGreen(facebookIcons, _facebook.default, _facebookGreen.default);
+  addPngHoverEffectGreen(instagramIcons, _instagram.default, _instagramGreen.default);
+  addPngHoverEffectGreen(facebookIcons, _facebook.default, _facebookGreen.default);
+  var servicesContentColumnIds = document.querySelectorAll('.services__content-column h2');
+  var servicesContent = document.querySelectorAll('.services__content');
+
+  var bindData = function bindData(els) {
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      el.addEventListener('click', function (evt) {
+        var targetId = evt.currentTarget.id;
+        var targetContentId = document.querySelector("#".concat(targetId, "-content"));
+
+        for (var k = 0; k < servicesContentColumnIds.length; k++) {
+          var service = servicesContentColumnIds[k];
+          service.classList.remove('active-service');
+        }
+
+        for (var j = 0; j < servicesContent.length; j++) {
+          var content = servicesContent[j];
+          content.classList.remove('active-content');
+        }
+
+        evt.currentTarget.classList.add('active-service');
+        targetContentId.classList.add('active-content');
+      });
+    }
+  };
+
+  bindData(servicesContentColumnIds);
+  var faqQuestion = $('.faq__question');
+
+  var showToggle = function showToggle(els) {
+    $(els).each(function (i, el) {
+      $(el).click(function (evt) {
+        var siblings = $(evt.currentTarget).siblings().find('p');
+        siblings.each(function (i, el) {
+          $(el).hide();
+        });
+        var text = $(evt.currentTarget).find('p');
+
+        if (text.css('display') == 'block') {
+          text.fadeOut('fast');
+        } else {
+          text.fadeIn('fast');
+        }
+
+        evt.stopPropagation();
+      });
+    });
+  };
+
+  showToggle(faqQuestion);
+});
 },{"./images/instagram.png":"images/instagram.png","./images/instagram-green.png":"images/instagram-green.png","./images/facebook-green.png":"images/facebook-green.png","./images/facebook.png":"images/facebook.png"}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

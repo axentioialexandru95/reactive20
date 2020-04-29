@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1565" height="806" viewBox="0 0 1565 806">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #191919;
+      }
+
+      .cls-1 {
+        font-size: 48px;
+      }
+
+      .cls-1, .cls-9 {
+        font-family: TTCommons-Bold, TT Commons;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 32px;
+        font-family: TTCommons-DemiBold, TT Commons;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        font-size: 18px;
+        font-family: TTCommons-Regular, TT Commons;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-9 {
+        fill: #090909;
+        font-size: 120px;
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.006" y1="0.497" x2="1" y2="0.503" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#2aff4a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.088" y1="0.495" x2="23.418" y2="0.775" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" y1="0.454" x2="1" y2="0.546" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-0.001" y1="0.497" x2="1.005" y2="0.503" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-22.428" y1="0.225" x2="0.904" y2="0.505" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" y1="1" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#191919"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(-107 -4594)">
+    <text id="WORK_PROCESS" data-name="WORK 
+PROCESS" class="cls-1" transform="translate(107 4653)"><tspan x="0" y="0">WORK </tspan><tspan x="0" y="65">PROCESS</tspan></text>
+    <g id="Group_25" data-name="Group 25">
+      <text id="Define_Brief" data-name="Define 
+Brief" class="cls-2" transform="translate(344 5145)"><tspan x="-46.16" y="0">Define </tspan><tspan x="-30.96" y="30">Brief</tspan></text>
+      <text id="Ideate_Solution" data-name="Ideate
+Solution" class="cls-2" transform="translate(696 5145)"><tspan x="-41.68" y="0">Ideate</tspan><tspan x="-54.56" y="30">Solution</tspan></text>
+      <text id="Select_Rationale" data-name="Select
+Rationale" class="cls-2" transform="translate(1045 5145)"><tspan x="-41.76" y="0">Select</tspan><tspan x="-61.6" y="30">Rationale</tspan></text>
+      <text id="Learn_Feedback" data-name="Learn
+Feedback" class="cls-2" transform="translate(1400 5145)"><tspan x="-37.12" y="0">Learn</tspan><tspan x="-64" y="30">Feedback</tspan></text>
+      <text id="Research_Background" data-name="Research
+Background" class="cls-2" transform="translate(522 4616)"><tspan x="-61.12" y="0">Research</tspan><tspan x="-79.12" y="30">Background</tspan></text>
+      <text id="Prototype_Resolve" data-name="Prototype
+Resolve" class="cls-2" transform="translate(870 4616)"><tspan x="-65.52" y="0">Prototype</tspan><tspan x="-51.44" y="30">Resolve</tspan></text>
+      <text id="Implement_Delivery" data-name="Implement
+Delivery" class="cls-2" transform="translate(1218 4616)"><tspan x="-70.4" y="0">Implement</tspan><tspan x="-53.44" y="30">Delivery</tspan></text>
+      <text id="Follow-up" class="cls-2" transform="translate(1566 4630)"><tspan x="-65.44" y="0">Follow-up</tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(248 5204)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_2" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(600 5204)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_3" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(949 5204)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_4" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(1304 5204)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_5" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(426 4675)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_6" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(774 4675)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_7" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(1122 4675)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_8" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " class="cls-3" transform="translate(1470 4675)"><tspan x="21.173" y="13">Lorem ipsum dolor sit </tspan><tspan x="37.042" y="38">amet, consetetur </tspan><tspan x="8.315" y="63">sadipscing elitr, sed diam </tspan><tspan x="14.283" y="88">nonumy eirmod tempor </tspan><tspan x="0.567" y="113">invidunt ut labore et dolore </tspan><tspan x="6.86" y="138">magna aliquyam erat, sed </tspan><tspan x="3.402" y="163">diam voluptua. At vero eos </tspan><tspan x="12.085" y="188">et accusam et justo duo </tspan></text>
+      <g id="_20356_Converted_" data-name="20356 [Converted]" transform="translate(222.67 4775.414)">
+        <g id="Group_8" data-name="Group 8" transform="translate(25.33 197.79)">
+          <g id="Group_6" data-name="Group 6" transform="translate(11.352)">
+            <path id="Path_34" data-name="Path 34" class="cls-4" d="M37.582,141.278a79.039,79.039,0,0,0-1.289,14.47,4.117,4.117,0,1,1-8.233,0,86.94,86.94,0,0,1,1.289-15.177,12.8,12.8,0,0,1,2.828-.291A14.682,14.682,0,0,1,37.582,141.278Z" transform="translate(-28.06 -140.28)"/>
+          </g>
+          <g id="Group_7" data-name="Group 7">
+            <path id="Path_35" data-name="Path 35" class="cls-5" d="M56.267,155.748a15.468,15.468,0,1,1-18.3-15.177,12.8,12.8,0,0,1,2.828-.291,14.682,14.682,0,0,1,5.406,1A15.458,15.458,0,0,1,56.267,155.748Z" transform="translate(-25.33 -140.28)"/>
+          </g>
+        </g>
+        <g id="Group_11" data-name="Group 11" transform="translate(37.971 122.07)">
+          <g id="Group_9" data-name="Group 9">
+            <path id="Path_36" data-name="Path 36" class="cls-6" d="M1427.088,228.435A91.179,91.179,0,0,1,1246,213.258a82.955,82.955,0,0,0-165.91,0,91.167,91.167,0,1,1-182.335,0,82.955,82.955,0,1,0-165.91,0,91.188,91.188,0,0,1-182.376,0,82.955,82.955,0,0,0-165.91,0,91.188,91.188,0,0,1-182.376,0A82.923,82.923,0,0,0,36.6,198.788a14.682,14.682,0,0,0-5.406-1,12.8,12.8,0,0,0-2.828.291,91.156,91.156,0,0,1,181.046,15.177,82.955,82.955,0,1,0,165.91,0,91.188,91.188,0,1,1,182.376,0,82.955,82.955,0,0,0,165.91,0,91.188,91.188,0,1,1,182.376,0,82.955,82.955,0,1,0,165.91,0,91.167,91.167,0,1,1,182.335,0,82.946,82.946,0,0,0,164.621,14.47,14.682,14.682,0,0,0,5.406,1A12.8,12.8,0,0,0,1427.088,228.435Z" transform="translate(-28.37 -122.07)"/>
+            <path id="Path_37" data-name="Path 37" class="cls-7" d="M372.292,147.127A86.944,86.944,0,0,1,371,162.3a12.8,12.8,0,0,1-2.828.291,14.682,14.682,0,0,1-5.406-1,79.042,79.042,0,0,0,1.289-14.47,4.117,4.117,0,1,1,8.233,0Z" transform="translate(1027.715 -55.938)"/>
+          </g>
+          <g id="Group_10" data-name="Group 10" transform="translate(1380.423 75.72)">
+            <path id="Path_38" data-name="Path 38" class="cls-8" d="M391.287,155.748a15.412,15.412,0,0,1-12.641,15.177,12.8,12.8,0,0,1-2.828.291,14.682,14.682,0,0,1-5.406-1,15.459,15.459,0,1,1,20.874-14.47Z" transform="translate(-360.35 -140.28)"/>
+          </g>
+        </g>
+      </g>
+      <text id="_1" data-name="1" class="cls-9" transform="translate(317 5046)"><tspan x="0" y="0">1</tspan></text>
+      <text id="_4" data-name="4" class="cls-9" transform="translate(839 5046)"><tspan x="0" y="0">4</tspan></text>
+      <text id="_2" data-name="2" class="cls-9" transform="translate(492 5046)"><tspan x="0" y="0">2</tspan></text>
+      <text id="_5" data-name="5" class="cls-9" transform="translate(1014 5046)"><tspan x="0" y="0">5</tspan></text>
+      <text id="_3" data-name="3" class="cls-9" transform="translate(665 5046)"><tspan x="0" y="0">3</tspan></text>
+      <text id="_6" data-name="6" class="cls-9" transform="translate(1188 5046)"><tspan x="0" y="0">6</tspan></text>
+      <text id="_7" data-name="7" class="cls-9" transform="translate(1371 5046)"><tspan x="0" y="0">7</tspan></text>
+      <text id="_8" data-name="8" class="cls-9" transform="translate(1536 5046)"><tspan x="0" y="0">8</tspan></text>
+      <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(273 4897)">
+        <rect id="Rectangle_114" data-name="Rectangle 114" class="cls-10" width="144" height="7" transform="translate(0 179)"/>
+        <rect id="Rectangle_116" data-name="Rectangle 116" class="cls-10" width="144" height="7" transform="translate(352 179)"/>
+        <rect id="Rectangle_117" data-name="Rectangle 117" class="cls-10" width="144" height="7" transform="translate(701 179)"/>
+        <rect id="Rectangle_118" data-name="Rectangle 118" class="cls-10" width="144" height="7" transform="translate(1056 179)"/>
+        <rect id="Rectangle_115" data-name="Rectangle 115" class="cls-10" width="144" height="7" transform="translate(178)"/>
+        <rect id="Rectangle_119" data-name="Rectangle 119" class="cls-10" width="144" height="7" transform="translate(526)"/>
+        <rect id="Rectangle_120" data-name="Rectangle 120" class="cls-10" width="144" height="7" transform="translate(874)"/>
+        <rect id="Rectangle_121" data-name="Rectangle 121" class="cls-10" width="144" height="7" transform="translate(1222)"/>
+      </g>
+    </g>
+  </g>
+</svg>
