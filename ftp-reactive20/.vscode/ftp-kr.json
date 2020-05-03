@@ -1,0 +1,16 @@
+{
+    "host": "ftp.reactive20.com",
+    "username": "alexander@reactive20.com",
+    "password": "lifewarrior95",
+    "remotePath": "",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

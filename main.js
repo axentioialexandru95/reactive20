@@ -1,32 +1,5 @@
-import instagram from './images/instagram.png';
-import instagramGreen from './images/instagram-green.png';
-import facebookGreen from './images/facebook-green.png';
-import facebook from './images/facebook.png';
-
 $(document).ready(function () {
-
-
-    const instagramIcons = document.querySelectorAll('.instagram img');
-    const facebookIcons = document.querySelectorAll('.facebook img');
-    const addPngHoverEffectGreen = function (els, image, replace) {
-        for (let i = 0; i < els.length; i++) {
-            const icon = els[i];
-            icon.addEventListener('mouseover', (evt) => {
-                const img = evt.currentTarget
-                img.setAttribute('src', replace)
-            })
-            icon.addEventListener('mouseleave', (evt) => {
-                const img = evt.currentTarget
-                img.setAttribute('src', image)
-            })
-
-        }
-    }
-
-    addPngHoverEffectGreen(instagramIcons, instagram, instagramGreen);
-    addPngHoverEffectGreen(facebookIcons, facebook, facebookGreen);
-
-
+    const portfolioItems = $('.portfolio-overlay')
     const servicesContentColumnIds = document.querySelectorAll('.services__content-column h2')
     const servicesContent = document.querySelectorAll('.services__content')
 
@@ -77,4 +50,51 @@ $(document).ready(function () {
 
     }
     showToggle(faqQuestion)
+
+    const scrollSpyContainer = $('.scrollspy li')
+    const scrollSpyAction = function (scrollSpyContainer) {
+        scrollSpyContainer.each((i, el) => {
+            $(el).on('click', (evt) => {
+                const link = $(evt.currentTarget).find('a')
+                const href = link.attr('href');
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+
+            })
+        })
+    }
+    scrollSpyAction(scrollSpyContainer)
+
+
+    portfolioItems.each((i, el) => {
+        $(el).click((evt) => {
+            const target = evt.currentTarget;
+            $('.underlay').fadeIn();
+            $(el).find('.portfolio-content').fadeIn();
+            $(el).find('ion-icon').fadeIn();
+            $('html').css('overflow-y', 'hidden');
+            evt.stopPropagation();
+        })
+        $(el).find('ion-icon').click((evt) => {
+            const target = evt.currentTarget;
+            $('.underlay').fadeOut();
+            $(target).fadeOut();
+            $(el).find('.portfolio-content').fadeOut();
+            $('html').css('overflow-y', 'scroll');
+            evt.stopPropagation();
+        })
+        $('.underlay').click((evt) => {
+            const target = evt.currentTarget;
+            $(target).fadeOut();
+            $('.portfolio-content').fadeOut();
+            $('.portfolio-content').find('ion-icon').fadeOut();
+            $('html').css('overflow-y', 'scroll');
+            evt.stopPropagation();
+        })
+    })
+
+    $('#canvasOne').attr('width', window.innerWidth);
+    $('#canvasOne').attr('height', window.innerHeight);
+
 });

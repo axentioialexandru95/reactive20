@@ -1,0 +1,207 @@
+{
+  "ftp://ftp.reactive20.com:21@alexander@reactive20.com": {
+    ".bash_logout": {
+      "type": "-",
+      "size": 18,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bash_profile": {
+      "type": "-",
+      "size": 193,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bashrc": {
+      "type": "-",
+      "size": 231,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".cagefs": {},
+    ".cl.selector": {},
+    ".contactemail": {
+      "type": "-",
+      "size": 29,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".cpanel": {},
+    ".cphorde": {},
+    ".ftpquota": {
+      "type": "-",
+      "size": 14,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htpasswds": {},
+    ".lastlogin": {
+      "type": "-",
+      "size": 82,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".pki": {},
+    ".softaculous": {},
+    ".spamassassin": {},
+    ".spamassassinboxenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".spamassassinenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".trash": {},
+    "New folder": {},
+    "access-logs": {
+      "type": "l",
+      "size": 34,
+      "lmtime": 0,
+      "modified": false
+    },
+    "etc": {},
+    "ftp-reactive20": {},
+    "logs": {},
+    "mail": {},
+    "public_ftp": {},
+    "public_html": {
+      ".htaccess": {
+        "type": "-",
+        "size": 460,
+        "lmtime": 0,
+        "modified": false
+      },
+      "index.php": {
+        "type": "-",
+        "size": 405,
+        "lmtime": 0,
+        "modified": false
+      },
+      "license.txt": {
+        "type": "-",
+        "size": 19915,
+        "lmtime": 0,
+        "modified": false
+      },
+      "readme.html": {
+        "type": "-",
+        "size": 7278,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-activate.php": {
+        "type": "-",
+        "size": 6912,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-admin": {},
+      "wp-blog-header.php": {
+        "type": "-",
+        "size": 351,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-comments-post.php": {
+        "type": "-",
+        "size": 2275,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-config-sample.php": {
+        "type": "-",
+        "size": 2913,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-config.php": {
+        "type": "-",
+        "size": 3118,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-content": {
+        "themes": {
+          "index.php": {
+            "type": "-",
+            "size": 28,
+            "lmtime": 0,
+            "modified": false
+          },
+          "twentynineteen": {},
+          "twentyseventeen": {},
+          "twentytwenty": {}
+        }
+      },
+      "wp-cron.php": {
+        "type": "-",
+        "size": 3940,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-includes": {},
+      "wp-links-opml.php": {
+        "type": "-",
+        "size": 2496,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-load.php": {
+        "type": "-",
+        "size": 3300,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-login.php": {
+        "type": "-",
+        "size": 47874,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-mail.php": {
+        "type": "-",
+        "size": 8509,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-settings.php": {
+        "type": "-",
+        "size": 19396,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-signup.php": {
+        "type": "-",
+        "size": 31111,
+        "lmtime": 0,
+        "modified": false
+      },
+      "wp-trackback.php": {
+        "type": "-",
+        "size": 4755,
+        "lmtime": 0,
+        "modified": false
+      },
+      "xmlrpc.php": {
+        "type": "-",
+        "size": 3133,
+        "lmtime": 0,
+        "modified": false
+      }
+    },
+    "ssl": {},
+    "tmp": {},
+    "www": {
+      "type": "l",
+      "size": 11,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

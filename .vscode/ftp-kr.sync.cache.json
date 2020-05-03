@@ -1,0 +1,97 @@
+{
+  "ftp://ftp.reactive20.com:21@alexander@reactive20.com": {
+    ".bash_logout": {
+      "type": "-",
+      "size": 18,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bash_profile": {
+      "type": "-",
+      "size": 193,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bashrc": {
+      "type": "-",
+      "size": 231,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".cache": {},
+    ".cagefs": {},
+    ".cl.selector": {},
+    ".contactemail": {
+      "type": "-",
+      "size": 29,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".cpanel": {},
+    ".cphorde": {},
+    ".ftpquota": {
+      "type": "-",
+      "size": 14,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htpasswds": {},
+    ".lastlogin": {
+      "type": "-",
+      "size": 82,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".pki": {},
+    ".softaculous": {},
+    ".spamassassin": {},
+    ".spamassassinboxenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".spamassassinenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".trash": {},
+    "New folder": {},
+    "access-logs": {
+      "type": "l",
+      "size": 34,
+      "lmtime": 0,
+      "modified": false
+    },
+    "dist": {},
+    "etc": {},
+    "ftp-reactive20": {},
+    "index.html": {
+      "type": "-",
+      "size": 15445,
+      "lmtime": 0,
+      "modified": false
+    },
+    "logs": {},
+    "mail": {},
+    "main.js": {
+      "type": "-",
+      "size": 2413,
+      "lmtime": 0,
+      "modified": false
+    },
+    "public_ftp": {},
+    "public_html": {},
+    "ssl": {},
+    "tmp": {},
+    "www": {
+      "type": "l",
+      "size": 11,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

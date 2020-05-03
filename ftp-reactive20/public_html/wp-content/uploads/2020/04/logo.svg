@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__logo" width="60" height="60.053" viewBox="0 0 60 60.053">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#5cf291}
+        </style>
+    </defs>
+    <path id="prefix__Rectangle_180" d="M0 0H29.181V12.002H0z" class="prefix__cls-1" data-name="Rectangle 180" transform="translate(0 48.051)"/>
+    <path id="prefix__Path_46" d="M145.67 0v43.4h38.3a21.7 21.7 0 0 0 21.7-21.7A21.7 21.7 0 0 0 183.966 0zm38.3 31.4h-26.3V12h26.3a9.7 9.7 0 0 1 9.7 9.7 9.7 9.7 0 0 1-9.704 9.7z" class="prefix__cls-1" data-name="Path 46" transform="translate(-145.67)"/>
+    <path id="prefix__Path_47" d="M522.29 416.75h4.6a12 12 0 0 1 12 12h-16.6z" class="prefix__cls-1" data-name="Path 47" transform="translate(-478.89 -368.725)"/>
+</svg>

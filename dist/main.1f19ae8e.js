@@ -117,47 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"images/instagram.png":[function(require,module,exports) {
-module.exports = "/instagram.4b783f94.png";
-},{}],"images/instagram-green.png":[function(require,module,exports) {
-module.exports = "/instagram-green.9358b277.png";
-},{}],"images/facebook-green.png":[function(require,module,exports) {
-module.exports = "/facebook-green.2983a70d.png";
-},{}],"images/facebook.png":[function(require,module,exports) {
-module.exports = "/facebook.1207ba1d.png";
-},{}],"main.js":[function(require,module,exports) {
-"use strict";
-
-var _instagram = _interopRequireDefault(require("./images/instagram.png"));
-
-var _instagramGreen = _interopRequireDefault(require("./images/instagram-green.png"));
-
-var _facebookGreen = _interopRequireDefault(require("./images/facebook-green.png"));
-
-var _facebook = _interopRequireDefault(require("./images/facebook.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+})({"main.js":[function(require,module,exports) {
 $(document).ready(function () {
-  var instagramIcons = document.querySelectorAll('.instagram img');
-  var facebookIcons = document.querySelectorAll('.facebook img');
-
-  var addPngHoverEffectGreen = function addPngHoverEffectGreen(els, image, replace) {
-    for (var i = 0; i < els.length; i++) {
-      var icon = els[i];
-      icon.addEventListener('mouseover', function (evt) {
-        var img = evt.currentTarget;
-        img.setAttribute('src', replace);
-      });
-      icon.addEventListener('mouseleave', function (evt) {
-        var img = evt.currentTarget;
-        img.setAttribute('src', image);
-      });
-    }
-  };
-
-  addPngHoverEffectGreen(instagramIcons, _instagram.default, _instagramGreen.default);
-  addPngHoverEffectGreen(facebookIcons, _facebook.default, _facebookGreen.default);
+  var portfolioItems = $('.portfolio-overlay');
   var servicesContentColumnIds = document.querySelectorAll('.services__content-column h2');
   var servicesContent = document.querySelectorAll('.services__content');
 
@@ -208,8 +170,51 @@ $(document).ready(function () {
   };
 
   showToggle(faqQuestion);
+  var scrollSpyContainer = $('.scrollspy li');
+
+  var scrollSpyAction = function scrollSpyAction(scrollSpyContainer) {
+    scrollSpyContainer.each(function (i, el) {
+      $(el).on('click', function (evt) {
+        var link = $(evt.currentTarget).find('a');
+        var href = link.attr('href');
+        $('html, body').animate({
+          scrollTop: $(href).offset().top
+        }, 500);
+      });
+    });
+  };
+
+  scrollSpyAction(scrollSpyContainer);
+  portfolioItems.each(function (i, el) {
+    $(el).click(function (evt) {
+      var target = evt.currentTarget;
+      $('.underlay').fadeIn();
+      $(el).find('.portfolio-content').fadeIn();
+      $(el).find('ion-icon').fadeIn();
+      $('html').css('overflow-y', 'hidden');
+      evt.stopPropagation();
+    });
+    $(el).find('ion-icon').click(function (evt) {
+      var target = evt.currentTarget;
+      $('.underlay').fadeOut();
+      $(target).fadeOut();
+      $(el).find('.portfolio-content').fadeOut();
+      $('html').css('overflow-y', 'scroll');
+      evt.stopPropagation();
+    });
+    $('.underlay').click(function (evt) {
+      var target = evt.currentTarget;
+      $(target).fadeOut();
+      $('.portfolio-content').fadeOut();
+      $('.portfolio-content').find('ion-icon').fadeOut();
+      $('html').css('overflow-y', 'scroll');
+      evt.stopPropagation();
+    });
+  });
+  $('#canvasOne').attr('width', window.innerWidth);
+  $('#canvasOne').attr('height', window.innerHeight);
 });
-},{"./images/instagram.png":"images/instagram.png","./images/instagram-green.png":"images/instagram-green.png","./images/facebook-green.png":"images/facebook-green.png","./images/facebook.png":"images/facebook.png"}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -237,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63179" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54816" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

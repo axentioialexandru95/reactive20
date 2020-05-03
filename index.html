@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="main.scss" />
   </head>
   <body>
+    <div class="underlay"></div>
     <!-- Scrollspy -->
     <ul
-      class="scrollspy"
+      class="scrollspy uk-animation-fade"
+      style="animation-delay: 500ms;"
       uk-scrollspy-nav="offset: 150;closest: li; scroll: true"
     >
       <li><a href="#top"></a></li>
@@ -24,52 +26,61 @@
     <!-- Scrollspy -->
     <!-- Navbar -->
     <div class="navbar">
-      <div class="navbar__left-container">
+      <div class="uk-animation-slide-top-small navbar__left-container">
         <div class="row-50 navbar__links">
-          <div class="navbar__logo navbar__link">
+          <div class="navbar__logo navbar__link uk-animation-slide-top-small"  style="animation-delay: 200ms;">
             <a href="/home">
               <img src="/images/logo.svg" alt="Reactive20 logo" />
             </a>
           </div>
-          <div class="navbar__link"><a href="/">Home</a></div>
-          <div class="navbar__link"><a href="#about">About</a></div>
-          <div class="navbar__link"><a href="#portfolio">Portfolio</a></div>
-          <div class="navbar__link"><a href="#services">Services</a></div>
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 500ms;"><a href="/">Home</a></div>
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 600ms;"><a href="#about">About</a></div>
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 700ms;"><a href="#portfolio">Portfolio</a></div>
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 800ms;"><a href="#services">Services</a></div>
         </div>
       </div>
-      <div class="navbar__right-container">
+      <div class="uk-animation-slide-top-small navbar__right-container" style="animation-delay: 200ms;">
         <div class="navbar__links">
-          <div class="navbar__link"><a href="#services">Services</a></div>
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 900ms;"><a href="#services">Services</a></div>
         </div>
-        <div class="row-50 navbar__links navbar__links--language">
+        <div class="row-50 navbar__links uk-animation-slide-left-small navbar__links--language" style="animation-delay: 1000ms;">
           <a class="active" href="/en">RO </a>
           <span>/</span>
           <a href="/en">EN</a>
         </div>
       </div>
     </div>
-
     <!-- Navbar -->
 
     <!-- Hero -->
-    <div class="row-50">
-      <div class="hero" id="top">
-        <div class="hero__social-right">
-          <div class="instagram">
-            <img src="/images/instagram.png" alt="" srcset="" />
+    <div class="hero" id="top">
+      <canvas id="canvasOne" width="1920" height="1080"  class="uk-animation-fade" style="animation-delay: 1000ms;"></canvas>
+      <div class="row-50">
+        <div class="hero__content uk-animation-slide-left-small" style="animation-delay: 1000ms;" >
+          <h1>
+            REVOLUTIONARY <br> DIGITAL EXPERIENCE
+            <span></span>
+          </h1>
+          <h3>We offer strategic design, functionality and marketing <br>
+            solutions  to provide a superior experience for your client.</h3>
+        </div>
+        <div class="hero__social uk-animation-fade">
+          <a href="#" class="uk-animation-fade" style="animation-delay: 600ms;"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#" class="uk-animation-fade" style="animation-delay: 700ms;"><ion-icon name="logo-facebook"></ion-icon> </a>
           </div>
-          <div class="v-line"></div>
-          <div class="facebook">
-            <img src="/images/facebook.png" alt="" srcset="" />
-          </div>
+        </div>
+      </div>
+      <div class="scroll-downs uk-animation-fade" style="animation-delay: 1500ms">
+        <div class="mousey">
+          <div class="scroller"></div>
         </div>
       </div>
     </div>
     <!-- Hero -->
 
     <!-- About -->
-    <div class="about row-50 margin-left-30" id="about">
-      <div class="about__text-left">
+    <div  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;" class="about row-50 margin-left-30" id="about">
+      <div class="about__text-left" style="animation-delay: 500ms;">
         <h1>
           About <br />
           Reactive20<span>tm</span>
@@ -84,14 +95,16 @@
           tenetur. Excepturi, ex labore?
         </p>
       </div>
-      <div class="about__image-right">
-        <img src="/images/about-right.svg" alt="About reactive 20 image" />
+      <div class="about__image-right uk-animation-slide-right-medium">
+        <img src="/images/about/3.png" alt="About reactive 20 image" />
+        <img src="/images/about/2.png" alt="About reactive 20 image" />
+        <img src="/images/about/1.png" alt="About reactive 20 image" />
       </div>
     </div>
     <!-- About -->
     <!-- Portfolio -->
-    <div id="portfolio" class="portfolio margin-left-30 row-50">
-      <div class="portfolio__grid">
+    <div id="portfolio" uk-scrollspy="target: > div > div > img, > div > div > div > img, > div > div > div > h1, > div > div > div > p; cls: uk-animation-slide-left-small;" class="portfolio margin-left-30 row-50">
+      <div class="portfolio__grid" >
         <div class="portfolio__column">
           <div class="portfolio__content">
             <h1>Portfolio</h1>
@@ -102,30 +115,69 @@
               asperiores consectetur molestias quae at illo!
             </p>
           </div>
-          <img src="/images/img5.png" alt="" srcset="" />
+          <div class="portfolio-overlay">
+            <img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
+            <div class="portfolio-content">
+              <ion-icon name="close-outline"></ion-icon>
+              <div class="row">
+                <img src="https://images.pexels.com/photos/1936299/pexels-photo-1936299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              </div>
+              <div class="row">
+                <h1 style="text-align: center;">Project name</h1>
+              </div>
+              <div class="row row--flex">
+                <div class="column">
+                  <h1>Reactive20</h1>
+                </div>
+                <div class="column">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
+                </div>
+              </div>
+              <div class="row row--flex">
+                <div class="column">
+                  <h1>Reactive20</h1>
+                </div>
+                <div class="column">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
+                </div>
+              </div>
+              <div class="row">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+              </div>
+
+            </div>
+          </div>
         </div>
-        <img src="/images/img1.png" alt="" srcset="" />
+        <div class="portfolio-overlay">
+          <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" srcset="" />
+        </div>
       </div>
-      <div class="portfolio__grid">
-        <img src="/images/img4.png" alt="" srcset="" />
+      <div class="portfolio__grid" >
+        <div class="portfolio-overlay">
+          <img src="https://images.pexels.com/photos/1936299/pexels-photo-1936299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" srcset="" />
+        </div>
         <div class="portfolio__column">
-          <img src="/images/img3.png" alt="" srcset="" />
-          <img src="/images/img2.png" alt="" srcset="" />
+          <div class="portfolio-overlay">
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
+          </div>
+          <div class="portfolio-overlay">
+            <img src="https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Portfolio -->
     <div class="services margin-left-30 row-50" id="services">
-      <h1>Our services</h1>
-      <div class="services__content-row">
+      <h1 uk-scrollspy="cls: uk-animation-slide-left-small;">Our services</h1>
+      <div class="services__content-row"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;">
         <div class="services__content-column">
           <h2 id="design" class="active-service">Web design</h2>
           <h2 id="development">Web development</h2>
           <h2 id="marketing">Web marketing</h2>
           <h2 id="graphicDesign">Graphic Design</h2>
         </div>
-        <div class="services__content-column">
+        <div class="services__content-column uk-animation-slide-right-small">
           <div
             class="services__content active-content uk-animation-fade uk-animation-fast"
             id="design-content"
@@ -200,7 +252,7 @@
     <!-- Portfolio -->
 
     <!-- Segment Separator -->
-    <div class="separator">
+    <div class="separator"  uk-scrollspy="target: > img; cls: uk-animation-slide-left-small;">
       <img
         src="/images/segment-separator.png"
         alt="We understand digital products image"
@@ -209,15 +261,15 @@
     <!-- Segment Separator -->
 
     <!-- Work Process -->
-    <div id="process" class="work-process margin-left-30 row-50">
+    <div id="process" class="work-process margin-left-30 row-50"  uk-scrollspy="target: > img; cls: uk-animation-slide-left-small;">
       <img src="/images/work-process.svg" alt="work-process" />
     </div>
     <!-- Work Process -->
 
     <!-- FAQ -->
-    <div class="faq" id="faq">
+    <div class="faq" id="faq"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;">
       <div class="faq__container-left">
-        <div class="faq__questions">
+        <div class="faq__questions"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;">
           <h1>FAQ</h1>
 
           <div class="faq__question">
@@ -267,18 +319,18 @@
           </div>
         </div>
       </div>
-      <div class="faq__container-right">
-        <h1>Strategy</h1>
+      <div class="faq__container-right uk-animation-slide-right-small">
+        <h1>Strategize</h1>
         <h1>Design</h1>
-        <h1>Development</h1>
-        <h1>Code</h1>
+        <h1>Develop</h1>
+        <h1>Market</h1>
         <div class="block-container"></div>
       </div>
     </div>
     <!-- FAQ -->
 
     <!-- Contact us -->
-    <div class="contact margin-left-30 row-50" id="contact">
+    <div class="contact margin-left-30 row-50"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;" id="contact">
       <div class="column-left">
         <div class="title">
           <h1>Contact</h1>
@@ -312,8 +364,7 @@
           </ul>
         </div>
       </div>
-      <div class="vertical-separator"></div>
-      <div class="column-right">
+      <div class="column-right uk-animation-slide-right-small">
         <h1>Or leave us a message.</h1>
         <form action="">
           <div class="half-inputs">
@@ -337,14 +388,13 @@
     <!-- Footer -->
     <div class="footer_green-border"></div>
     <div class="footer row-50" id="footer">
-      <div class="footer__content">
+      <div class="footer__content"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small; delay: 50">
         <div class="about-section">
           <img src="/images/logo.svg" alt="Reactive20 logo" />
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
             eos ducimus itaque ipsam delectus recusandae dignissimos a nihil
-            reiciendis in, placeat, tempora quasi tenetur repellendus nulla
-            provident, facere id? Omnis?
+            reiciendis inl.
           </p>
         </div>
         <div class="summary-section">
@@ -368,23 +418,33 @@
         <div class="social-section">
           <h4>Social</h4>
           <ul>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon> @reactive20</a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon> @reactive20</a></li>
+            <li>
+              <a href="#"
+                ><ion-icon name="logo-facebook"></ion-icon> @reactive20</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon name="logo-instagram"></ion-icon> @reactive20</a
+              >
+            </li>
           </ul>
-          <p class="copyright">@ 2020  REACTIVE 20TM . All rights reserved</p>
+          <p class="copyright">@ 2020 REACTIVE 20TM . All rights reserved</p>
         </div>
       </div>
     </div>
     <!-- Footer -->
 
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="/js/uikit.min.js"></script>
-    <script src="/js/uikit-icons.min.js"></script>
-    <script src="/main.js"></script>
+    <script src="/main.js"></script>    
+    <script src="/js/header-animation.js"></script>
+
   </body>
 </html>
