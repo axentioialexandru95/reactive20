@@ -70,9 +70,9 @@
     "ftp-reactive20": {},
     "index.html": {
       "type": "-",
-      "size": 15445,
+      "size": 16016,
       "lmtime": 0,
-      "modified": false
+      "modified": true
     },
     "logs": {},
     "mail": {},
