@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reactive20</title>
     <link rel="stylesheet" href="/css/uikit.min.css" />
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <link rel="stylesheet" href="main.scss" />
+    
   </head>
   <body>
     <div class="underlay"></div>
     <!-- Scrollspy -->
-    <ul
+    <!-- <ul
       class="scrollspy uk-animation-fade"
       style="animation-delay: 500ms;"
       uk-scrollspy-nav="offset: 150;closest: li; scroll: true"
@@ -22,10 +24,10 @@
       <li><a href="#process"></a></li>
       <li><a href="#faq"></a></li>
       <li><a href="#contact"></a></li>
-    </ul>
+    </ul> -->
     <!-- Scrollspy -->
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar uk-visible@s">
       <div class="uk-animation-slide-top-small navbar__left-container">
         <div class="row-50 navbar__links">
           <div class="navbar__logo navbar__link uk-animation-slide-top-small"  style="animation-delay: 200ms;">
@@ -40,8 +42,8 @@
         </div>
       </div>
       <div class="uk-animation-slide-top-small navbar__right-container" style="animation-delay: 200ms;">
-        <div class="navbar__links">
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 900ms;"><a href="/blog">Latest Posts</a></div>
+        <div class="navbar__links navbar__links--blog">
+          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 900ms;"><a href="/blog.html">Blog</a></div>
         </div>
         <div class="row-50 navbar__links uk-animation-slide-left-small navbar__links--language" style="animation-delay: 1000ms;">
           <a class="active" href="/en">RO </a>
@@ -50,33 +52,52 @@
         </div>
       </div>
     </div>
+    <div class="navbar__responsive  uk-hidden@s">
+      <div class="navbar__responsive__left">
+        <div class="navbar__responsive__burger">
+        <button class="uk-animation-fade" style="animation-delay: 600ms;"><ion-icon name="reorder-three-outline"></ion-icon></button>
+        </div>
+
+        <div class="navbar__responsive__logo">
+          <a href="/">
+            <img src="/images/logo.svg" alt="Reactive20 logo"/>
+          </a>
+        </div>
+      </div>
+      <div class="navbar__responsive__right">
+        <a class="active" href="/en">RO </a>
+          <span>/</span>
+          <a href="/en">EN</a>
+      </div>
+    </div>
     <!-- Navbar -->
 
     <!-- Hero -->
     <div class="hero" id="top">
-      <canvas id="canvasOne" width="1920" height="1080"  class="uk-animation-fade" style="animation-delay: 1000ms;"></canvas>
+      <canvas id="canvasOne" width="1920" height="1080"  class="uk-visible@s uk-animation-fade" style="animation-delay: 1000ms;"></canvas>
       <div class="row-50">
         <div class="hero__content uk-animation-slide-left-small" style="animation-delay: 1000ms;" >
           <h1>
             REVOLUTIONARY <br> DIGITAL EXPERIENCE
             <span></span>
           </h1>
-          <h3>We offer strategic design, functionality and marketing <br>
+          <h3>We offer strategic design, functionality and marketing <br class="uk-visible@s">
             solutions  to provide a superior experience for your client.</h3>
         </div>
-        <div class="hero__social uk-animation-fade">
+        <div class="hero__social uk-visible@s uk-animation-fade">
           <a href="#" class="uk-animation-fade" style="animation-delay: 600ms;"><ion-icon name="logo-instagram"></ion-icon></a>
           <a href="#" class="uk-animation-fade" style="animation-delay: 700ms;"><ion-icon name="logo-facebook"></ion-icon> </a>
           </div>
         </div>
       </div>
-      <div class="scroll-downs uk-animation-fade" style="animation-delay: 1500ms">
+      <div class="scroll-downs uk-animation-fade uk-visible@s" style="animation-delay: 1500ms">
         <div class="mousey">
           <div class="scroller"></div>
         </div>
       </div>
     </div>
     <!-- Hero -->
+    <hr class="hr-right ui-visible@s"></hr>
 
     <!-- About -->
     <div  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;" class="about row-50 margin-left-30" id="about">
@@ -85,83 +106,75 @@
           About <br />
           Reactive20<span>tm</span>
         </h1>
+        <img src="/images/about-right.svg" alt="" srcset="">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          officia repellat amet ut cumque nisi, nobis iure quaerat ipsa aperiam
-          voluptatibus, repellendus incidunt fugit atque hic blanditiis natus
-          dolores quae. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Ullam quos, porro ipsa quisquam voluptas iusto vero. Atque ullam
-          harum nesciunt excepturi, consequatur rerum explicabo placeat dolorem
-          tenetur. Excepturi, ex labore?
+          Reactive 20 was born from the desire to create complete digital solutions, combining our design experience, technical know-how, and marketing skills. 
+          In the development of our products we approach a holistic orientation, starting from the analysis of your business purpose, the brand identity, and the functionalities desired. We analyze the digital space in which your business operates and its competitors and we find differentiating factors to make your website remarkable. 
+          Using clearly defined processes we deliver digital solutions focused on your customer's gratifying experience, creating a competitive advantage for your business.
+        
         </p>
       </div>
-      <div class="about__image-right uk-animation-slide-right-medium">
+      <div class="about__image-right uk-animation-slide-right-medium uk-visible@s">
         <img src="/images/about/3.png" alt="About reactive 20 image" />
         <img src="/images/about/2.png" alt="About reactive 20 image" />
         <img src="/images/about/1.png" alt="About reactive 20 image" />
       </div>
     </div>
     <!-- About -->
+    <hr class="uk-hidden@s hr-left"></hr>
     <!-- Portfolio -->
     <div id="portfolio" uk-scrollspy="target: > div > div > img, > div > div > div > img, > div > div > div > h1, > div > div > div > p; cls: uk-animation-slide-left-small;" class="portfolio margin-left-30 row-50">
       <div class="portfolio__grid" >
-        <div class="portfolio__column">
-          <div class="portfolio__content">
-            <h1>Portfolio</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-              velit quod facilis ducimus ipsum dignissimos provident at
-              repudiandae totam. A dignissimos quo aliquid perspiciatis
-              asperiores consectetur molestias quae at illo!
-            </p>
-          </div>
-          <div class="portfolio-overlay">
-            <img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
-            <div class="portfolio-content">
-              <ion-icon name="close-outline"></ion-icon>
-              <div class="row">
-                <img src="https://images.pexels.com/photos/1936299/pexels-photo-1936299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-              </div>
-              <div class="row">
-                <h1 style="text-align: center;">Project name</h1>
-              </div>
-              <div class="row row--flex">
-                <div class="column">
-                  <h1>Reactive20</h1>
-                </div>
-                <div class="column">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
-                </div>
-              </div>
-              <div class="row row--flex">
-                <div class="column">
-                  <h1>Reactive20</h1>
-                </div>
-                <div class="column">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
-                </div>
-              </div>
-              <div class="row">
-                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-              </div>
-
-            </div>
-          </div>
+        <div class="portfolio__content">
+          <h1>Portfolio</h1>
+          <p>
+            We develop customized digital experiences for businesses that want to expand their presence in the online environment. Our solutions are guided by the desire to create platforms that are appreciated by users, both for ease of use and creative design. We are not afraid to leave our comfort zone, we are afraid not to do it. We are happy when our customers come with
+different and challenging ideas for their business, the more difficult the problem, the greater the energy and creativity with which we approach it.  Open our portfolio to see some of the solutions we have offered so far.
+          </p>
         </div>
         <div class="portfolio-overlay">
-          <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" srcset="" />
+          <img src="./images/last-sync2.jpg" alt="" srcset="" />
+          <div class="portfolio-content">
+            <ion-icon name="close-outline"></ion-icon>
+            <div class="row">
+              <img src="./images/last-sync2.jpg" alt="">
+            </div>
+            <div class="row">
+              <h1 style="text-align: center;">Project name</h1>
+            </div>
+            <div class="row row--flex">
+              <div class="column">
+                <h1>Reactive20</h1>
+              </div>
+              <div class="column">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
+              </div>
+            </div>
+            <div class="row row--flex">
+              <div class="column">
+                <h1>Reactive20</h1>
+              </div>
+              <div class="column">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem reprehenderit rem ab impedit odio incidunt architecto assumenda esse! Qui accusantium doloribus praesentium natus impedit perspiciatis facere sit reprehenderit doloremque.</p>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./images/last-sync1.jpg" alt="">
+            </div>
+
+          </div>
         </div>
       </div>
       <div class="portfolio__grid" >
         <div class="portfolio-overlay">
-          <img src="https://images.pexels.com/photos/1936299/pexels-photo-1936299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" srcset="" />
+          <img src="./images/curvedme2.jpg" alt="" srcset="" />
         </div>
         <div class="portfolio__column">
           <div class="portfolio-overlay">
-            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
+            <img src="./images/curvedme1.jpg" alt="" srcset="" />
           </div>
           <div class="portfolio-overlay">
-            <img src="https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" />
+            <img src="./images/last-sync1.jpg" alt="" srcset="" />
           </div>
         </div>
       </div>
@@ -172,25 +185,60 @@
       <h1 uk-scrollspy="cls: uk-animation-slide-left-small;">Our services</h1>
       <div class="services__content-row"  uk-scrollspy="target: > div; cls: uk-animation-slide-left-small;">
         <div class="services__content-column">
-          <h2 id="design" class="active-service">Web design</h2>
+          <h2 id="design" class="active-service">marketing</h2>
+          <div class="uk-hidden@s services__content active-content uk-animation-fade uk-animation-fast" id="design-content">
+            <p>
+              We generate and implement marketing solutions based on the analysis of the attributes of regular and ideal customers, the sales funnel and the brand strategy. We increase the visibility of your brand and attract new customers using ads built following the most actual and efficient models from your field. We help you develop the sales process using validated methods such as AIDA (attention, interest, desire, action), value first, etc. to increase the conversion rate of
+              your funnel. We maximize the lifetime value of each current customer by retargeting with relevant ads using a compelling message and tone that suits your costumer.
+              “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole! ”
+            </p>
+            <ul class="logo-list">
+              <img src="/images/adobe.png" alt="" />
+              <img src="/images/connect.png" alt="" />
+              <img src="/images/illustrator.png" alt="" />
+              <img src="/images/javascript.png" alt="" />
+              <img src="/images/photoshop.png" alt="" />
+              <img src="/images/xd.png" alt="" />
+            </ul>
+          </div>
           <h2 id="development">Web development</h2>
+          <div class="uk-hidden@s services__content active-content uk-animation-fade uk-animation-fast" id="development-content">
+            <p>
+              We generate and implement marketing solutions based on the analysis of the attributes of regular and ideal customers, the sales funnel and the brand strategy. We increase the visibility of your brand and attract new customers using ads built following the most actual and efficient models from your field. We help you develop the sales process using validated methods such as AIDA (attention, interest, desire, action), value first, etc. to increase the conversion rate of
+              your funnel. We maximize the lifetime value of each current customer by retargeting with relevant ads using a compelling message and tone that suits your costumer.
+              “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole! ”
+              
+            </p>
+          </div>
           <h2 id="marketing">marketing</h2>
+          <div class="uk-hidden@s services__content active-content uk-animation-fade uk-animation-fast" id="marketing-content">
+            <p>
+              We generate and implement marketing solutions based on the analysis of the attributes of regular and ideal customers, the sales funnel and the brand strategy. We increase the visibility of your brand and attract new customers using ads built following the most actual and efficient models from your field. We help you develop the sales process using validated methods such as AIDA (attention, interest, desire, action), value first, etc. to increase the conversion rate of
+              your funnel. We maximize the lifetime value of each current customer by retargeting with relevant ads using a compelling message and tone that suits your costumer.
+              “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole! ”
+              
+            </p>
+          </div>
           <h2 id="graphicDesign">Graphic Design</h2>
+          <div class="uk-hidden@s services__content active-content uk-animation-fade uk-animation-fast" id="graphicDesign-content">
+            <p>
+              We generate and implement marketing solutions based on the analysis of the attributes of regular and ideal customers, the sales funnel and the brand strategy. We increase the visibility of your brand and attract new customers using ads built following the most actual and efficient models from your field. We help you develop the sales process using validated methods such as AIDA (attention, interest, desire, action), value first, etc. to increase the conversion rate of
+              your funnel. We maximize the lifetime value of each current customer by retargeting with relevant ads using a compelling message and tone that suits your costumer.
+              “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole! ”
+              
+            </p>
+          </div>
         </div>
-        <div class="services__content-column uk-animation-slide-right-small">
+        <div class="services__content-column uk-visible@s uk-animation-slide-right-small">
           <div
             class="services__content active-content uk-animation-fade uk-animation-fast"
             id="design-content"
           >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, saepe? Libero quas, aliquid possimus officia maxime
-              itaque dignissimos doloribus placeat, quae assumenda, totam omnis
-              ipsa provident ipsam? Error, cupiditate tempora. Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe?
-              Libero quas, aliquid possimus officia maxime itaque dignissimos
-              doloribus placeat, quae assumenda, totam omnis ipsa provident
-              ipsam? Error, cupiditate tempora.
+              We generate and implement marketing solutions based on the analysis of the attributes of regular and ideal customers, the sales funnel and the brand strategy. We increase the visibility of your brand and attract new customers using ads built following the most actual and efficient models from your field. We help you develop the sales process using validated methods such as AIDA (attention, interest, desire, action), value first, etc. to increase the conversion rate of
+              your funnel. We maximize the lifetime value of each current customer by retargeting with relevant ads using a compelling message and tone that suits your costumer.
+              “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole! ”
+              
             </p>
             <ul class="logo-list">
               <img src="/images/adobe.png" alt="" />
@@ -203,8 +251,7 @@
           </div>
           <div
             class="services__content uk-animation-fade uk-animation-fast"
-            id="development-content"
-          >
+            id="development-content">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reprehenderit, saepe? Libero quas, aliquid possimus officia maxime
@@ -218,8 +265,7 @@
           </div>
           <div
             class="services__content uk-animation-fade uk-animation-fast"
-            id="marketing-content"
-          >
+            id="marketing-content">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reprehenderit, saepe? Libero quas, aliquid possimus officia maxime
@@ -262,7 +308,8 @@
 
     <!-- Work Process -->
     <div id="process" class="work-process margin-left-30 row-50"  uk-scrollspy="target: > img; cls: uk-animation-slide-left-small;">
-      <img src="/images/work-process.svg" alt="work-process" />
+      <img class="uk-visible@s" src="/images/work-process.svg" alt="work-process" />
+      <img class="uk-hidden@s" src="/images/process-mobile.svg" alt="work-process" />
     </div>
     <!-- Work Process -->
 
@@ -319,7 +366,7 @@
           </div>
         </div>
       </div>
-      <div class="faq__container-right uk-animation-slide-right-small">
+      <div class="faq__container-right uk-visible@s uk-animation-slide-right-small">
         <h1>Strategize</h1>
         <h1>Design</h1>
         <h1>Develop</h1>
@@ -377,7 +424,7 @@
             id=""
             cols="20"
             placeholder="Briefly tell us about your project and your current goals. How can we help you?"
-            rows="10"
+            rows="5"
           ></textarea>
           <button type="submit">Send message</button>
         </form>

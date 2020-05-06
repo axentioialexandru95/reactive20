@@ -15,7 +15,6 @@ $(document).ready(function () {
                 for (let k = 0; k < servicesContentColumnIds.length; k++) {
                     const service = servicesContentColumnIds[k];
                     service.classList.remove('active-service')
-
                 }
 
                 for (let j = 0; j < servicesContent.length; j++) {

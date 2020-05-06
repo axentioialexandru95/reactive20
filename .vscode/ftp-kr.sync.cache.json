@@ -38,9 +38,9 @@
     ".htpasswds": {},
     ".lastlogin": {
       "type": "-",
-      "size": 82,
+      "size": 123,
       "lmtime": 0,
-      "modified": false
+      "modified": true
     },
     ".pki": {},
     ".softaculous": {},
@@ -65,12 +65,29 @@
       "lmtime": 0,
       "modified": false
     },
+    "blog.html": {
+      "type": "-",
+      "size": 10374,
+      "lmtime": 0,
+      "modified": false
+    },
     "dist": {},
+    "dist.rar": {
+      "type": "-",
+      "size": 6628410,
+      "lmtime": 0,
+      "modified": false
+    },
+    "dist.zip": {
+      "type": "-",
+      "size": 6645253,
+      "lmtime": 0,
+      "modified": false
+    },
     "etc": {},
-    "ftp-reactive20": {},
     "index.html": {
       "type": "-",
-      "size": 16016,
+      "size": 20379,
       "lmtime": 0,
       "modified": true
     },
@@ -81,6 +98,12 @@
       "size": 2413,
       "lmtime": 0,
       "modified": false
+    },
+    "post.html": {
+      "type": "-",
+      "size": 6447,
+      "lmtime": 0,
+      "modified": true
     },
     "public_ftp": {},
     "public_html": {},

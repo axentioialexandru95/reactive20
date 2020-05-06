@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-Regular.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-Bold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-ExtraBold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "TTCommons";
+    src: url("TTCommons-Black.ttf");
+    font-weight: 900;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+div {
+    font-family: "TTCommons";
+}
