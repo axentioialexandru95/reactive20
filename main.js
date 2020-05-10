@@ -1,33 +1,6 @@
 $(document).ready(function () {
     const portfolioItems = $('.portfolio-overlay')
     const servicesContentColumnIds = document.querySelectorAll('.services__content-column h2')
-    const servicesContent = document.querySelectorAll('.services__content')
-
-    const bindData = function (els) {
-
-        for (let i = 0; i < els.length; i++) {
-            const el = els[i];
-            el.addEventListener('click', (evt) => {
-                const targetId = evt.currentTarget.id;
-                const targetContentId = document.querySelector(`#${targetId}-content`);
-
-
-                for (let k = 0; k < servicesContentColumnIds.length; k++) {
-                    const service = servicesContentColumnIds[k];
-                    service.classList.remove('active-service')
-                }
-
-                for (let j = 0; j < servicesContent.length; j++) {
-                    const content = servicesContent[j];
-                    content.classList.remove('active-content');
-                }
-
-                evt.currentTarget.classList.add('active-service')
-                targetContentId.classList.add('active-content');
-            })
-        }
-    }
-    bindData(servicesContentColumnIds);
 
     const faqQuestion = $('.faq__question')
     const showToggle = function (els) {
@@ -95,5 +68,42 @@ $(document).ready(function () {
 
     $('#canvasOne').attr('width', window.innerWidth);
     $('#canvasOne').attr('height', window.innerHeight);
+
+
+    const servicesDropdown = function () {
+
+        let activeIndex = 0;
+        const servicesContent = $('.services__content');
+        const dropdownButtons = $('.services__buttons h2');
+        const activeDropdown = $('.services__content.active-service');
+
+        dropdownButtons.each((i, el) => {
+            $(el).on('click', (evt) => {
+                const element = $(evt.currentTarget).parent();
+                element.addClass('active-service');
+                const siblings = element.siblings();
+                siblings.removeClass('active-service');
+                activeIndex = i;
+
+                // Set the content to the current active element
+                servicesContent.each((i, el) => {
+                    const siblings = $(el).siblings();
+                    siblings.removeClass('active-content');
+
+                    if (i == activeIndex) {
+                        // Event loop will remove the classes after they were added 
+                        // thus not showing the correct elements
+                        setTimeout(() => {
+                            $(el).addClass('active-content');
+                        }, 0);
+                    }
+
+                })
+            });
+        })
+
+    }
+
+    servicesDropdown();
 
 });

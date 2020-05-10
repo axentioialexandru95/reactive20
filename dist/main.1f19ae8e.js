@@ -121,32 +121,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 $(document).ready(function () {
   var portfolioItems = $('.portfolio-overlay');
   var servicesContentColumnIds = document.querySelectorAll('.services__content-column h2');
-  var servicesContent = document.querySelectorAll('.services__content');
-
-  var bindData = function bindData(els) {
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i];
-      el.addEventListener('click', function (evt) {
-        var targetId = evt.currentTarget.id;
-        var targetContentId = document.querySelector("#".concat(targetId, "-content"));
-
-        for (var k = 0; k < servicesContentColumnIds.length; k++) {
-          var service = servicesContentColumnIds[k];
-          service.classList.remove('active-service');
-        }
-
-        for (var j = 0; j < servicesContent.length; j++) {
-          var content = servicesContent[j];
-          content.classList.remove('active-content');
-        }
-
-        evt.currentTarget.classList.add('active-service');
-        targetContentId.classList.add('active-content');
-      });
-    }
-  };
-
-  bindData(servicesContentColumnIds);
   var faqQuestion = $('.faq__question');
 
   var showToggle = function showToggle(els) {
@@ -213,6 +187,37 @@ $(document).ready(function () {
   });
   $('#canvasOne').attr('width', window.innerWidth);
   $('#canvasOne').attr('height', window.innerHeight);
+
+  var servicesDropdown = function servicesDropdown() {
+    var activeIndex = 0;
+    var servicesContent = $('.services__content');
+    var dropdownButtons = $('.services__buttons h2');
+    var activeDropdown = $('.services__content.active-service');
+    dropdownButtons.each(function (i, el) {
+      $(el).on('click', function (evt) {
+        var element = $(evt.currentTarget).parent();
+        element.addClass('active-service');
+        var siblings = element.siblings();
+        siblings.removeClass('active-service');
+        activeIndex = i; // Set the content to the current active element
+
+        servicesContent.each(function (i, el) {
+          var siblings = $(el).siblings();
+          siblings.removeClass('active-content');
+
+          if (i == activeIndex) {
+            // Event loop will remove the classes after they were added 
+            // thus not showing the correct elements
+            setTimeout(function () {
+              $(el).addClass('active-content');
+            }, 0);
+          }
+        });
+      });
+    });
+  };
+
+  servicesDropdown();
 });
 },{}],"C:/Users/Alex/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -242,7 +247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53994" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
