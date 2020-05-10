@@ -97,6 +97,7 @@ $(document).ready(function () {
                     }
 
                 })
+               
             });
         })
 
@@ -114,7 +115,7 @@ $(document).ready(function () {
             const icon = $(element).find('.hamburger ion-icon')
             const language = $('.navbar__responsive__right')
             const responsiveContent = $('.navbar__responsive-content');
-            
+
             if (button.hasClass('is-active')) {
                 responsiveContent.hide()
                 $(element).animate({
@@ -124,7 +125,7 @@ $(document).ready(function () {
                     $(element).css('position', 'relative')
                     language.fadeIn();
                     button.removeClass('is-active')
-                    icon.attr('name', 'reorder-three-outline'); 
+                    icon.attr('name', 'reorder-three-outline');
 
                     // Animation complete.
                 });
@@ -140,7 +141,7 @@ $(document).ready(function () {
                 }, 300, function () {
 
                     responsiveContent.css('display', 'flex')
-                        
+
                     // Animation complete.
                 });
 

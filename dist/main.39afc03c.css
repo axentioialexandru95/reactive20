@@ -224,6 +224,10 @@ p {
   color: #5cf291;
   text-decoration: none;
 }
+.navbar__link a:hover .logo-svg {
+  transition: 0.2s ease-in-out;
+  fill: #5cf291;
+}
 
 .scrollspy {
   position: fixed;
@@ -749,7 +753,6 @@ p {
   color: white;
 }
 .portfolio-content img {
-  max-height: 450px;
   width: 100%;
   border: none;
   height: auto;
@@ -773,13 +776,17 @@ p {
   margin-bottom: 20px;
   min-height: 540px;
 }
-.portfolio__column {
-  grid-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 .portfolio__content {
   margin: auto 0;
+}
+.portfolio__content-title {
+  font-size: 120px;
+  font-weight: 600;
+}
+.portfolio__content-subtitle {
+  font-weight: 300;
+  font-size: 46px;
+  text-transform: capitalize;
 }
 
 ::-webkit-scrollbar {
@@ -849,8 +856,10 @@ p {
   display: none;
 }
 
-.active-service .mobile-content {
-  display: block !important;
+@media screen and (max-width: 640px) {
+  .active-service .mobile-content {
+    display: block !important;
+  }
 }
 
 .services__content {

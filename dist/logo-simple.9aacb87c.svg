@@ -1,1 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.5 503.95"><defs><style>.cls-1{fill:#fff;}</style></defs><title>logo reactiveALB2</title><rect class="cls-1" y="403.24" width="244.88" height="100.71"/><path class="cls-1" d="M145.67,0V364.21h321.4c100.57,0,182.1-81.53,182.1-182.11h0A182.1,182.1,0,0,0,467.07,0ZM467.05,263.49H246.35V100.68h220.7a81.41,81.41,0,0,1,81.41,81.41h0A81.41,81.41,0,0,1,467.05,263.49Z" transform="translate(-145.67)"/><path class="cls-1" d="M509.87,403h38.59A100.71,100.71,0,0,1,649.17,503.73H509.87Z" transform="translate(-145.67)"/></svg>
+<svg id="Layer_1" data-name="Layer 1" 
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.5 503.95">
+    <defs>
+        <style>.cls-1{fill:#fff;}</style>
+    </defs>
+    <title>logo reactiveALB2</title>
+    <rect class="cls-1" y="403.24" width="244.88" height="100.71"/>
+    <path class="cls-1" d="M145.67,0V364.21h321.4c100.57,0,182.1-81.53,182.1-182.11h0A182.1,182.1,0,0,0,467.07,0ZM467.05,263.49H246.35V100.68h220.7a81.41,81.41,0,0,1,81.41,81.41h0A81.41,81.41,0,0,1,467.05,263.49Z" transform="translate(-145.67)"/>
+    <path class="cls-1" d="M509.87,403h38.59A100.71,100.71,0,0,1,649.17,503.73H509.87Z" transform="translate(-145.67)"/>
+</svg>
