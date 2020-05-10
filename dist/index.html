@@ -6,9 +6,10 @@
     <title>Reactive20</title>
     <link rel="stylesheet" href="/uikit.min.2daa7517.css">
     <link rel="stylesheet" href="/fonts.b13d561a.css">
+    <link rel="stylesheet" href="/burger.d9244166.css">
     <link rel="stylesheet" href="/main.39afc03c.css">
     
-  <script src="/uikit.min.2daa7517.js"></script><script src="/fonts.b13d561a.js"></script><script src="/main.39afc03c.js"></script><script src="/blog.js"></script></head>
+  <script src="/uikit.min.2daa7517.js"></script><script src="/fonts.b13d561a.js"></script><script src="/burger.d9244166.js"></script><script src="/main.39afc03c.js"></script><script src="/blog.js"></script></head>
   <body>
     <div class="underlay"></div>
     <!-- Scrollspy -->
@@ -32,7 +33,7 @@
         <div class="row-50 navbar__links">
           <div class="navbar__logo navbar__link uk-animation-slide-top-small" style="animation-delay: 200ms;">
             <a href="/home">
-              <img src="/logo.236e4034.svg" alt="Reactive20 logo">
+              <img src="/logo-simple.9aacb87c.svg" alt="Reactive20 logo">
             </a>
           </div>
           <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 500ms;"><a href="/">Home</a></div>
@@ -55,7 +56,24 @@
     <div class="navbar__responsive  uk-hidden@s">
       <div class="navbar__responsive__left">
         <div class="navbar__responsive__burger">
-        <button class="uk-animation-fade" style="animation-delay: 600ms;"><ion-icon name="reorder-three-outline"></ion-icon></button>
+          <button class="uk-animation-slide-left-small hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="navbar__responsive-content uk-hidden@s">
+          <div class="inner-content">
+            <img src="/logo.236e4034.svg" class="uk-animation-slide-left-small" style="animation-delay: 100ms;" alt="" srcset="">
+            <ul>
+              <li class="uk-animation-slide-left-small" style="animation-delay: 200ms;"><a href="#">Home</a></li>
+              <li class="uk-animation-slide-left-small" style="animation-delay: 300ms;"><a href="#">Blog</a></li>
+            </ul>
+            <ul class="social">
+              <a href="#" class="uk-animation-slide-left-small" style="animation-delay: 400ms;"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#" class="uk-animation-slide-left-small" style="animation-delay: 500ms;"><ion-icon name="logo-facebook"></ion-icon> </a>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="navbar__responsive__right">
@@ -63,6 +81,7 @@
           <span>/</span>
           <a href="/en">EN</a>
       </div>
+     
     </div>
     <!-- Navbar -->
 
