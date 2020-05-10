@@ -53,9 +53,8 @@ p {
 
     &__responsive {
         z-index: 100;
-        background-color: white;
         display: flex;
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 0;
         right: 0;
@@ -71,7 +70,6 @@ p {
 
             button {
                 margin: auto;
-                margin-right: 20px;
                 border: none;
                 font-size: 48px;
                 background: none;
@@ -243,29 +241,50 @@ p {
     max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 200px;
-    height: 100vh;
+    height: 1080px;
     display: flex;
     position: relative;
 
-    #canvasOne {
+    .grey-background {
         position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
         left: 0;
+        right: 0;
         bottom: 0;
+        top: 0;
+        height: 54.2%;
+        width: 100%;
+        background: #dddddd;
+    }
+
+    &-image {
+        position: absolute;
+        right: 10%;
+        top: 15%;
+        transform: scale(1.1);
+        object-fit: cover;
+
+        .shadow {
+            position: absolute;
+            bottom: -120px;
+            left: -100px;
+        }
     }
 
     &__content {
         position: absolute;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
 
         h1 {
-            font-size: 62px;
-            font-weight: bold;
+            font-size: 142px;
+            line-height: 110px;
             margin-bottom: 0;
             position: relative;
+            font-weight: 600;
+
+            b {
+                font-weight: 900;
+            }
         }
 
         .language {
@@ -292,10 +311,10 @@ p {
         span {
             background: $green;
             position: absolute;
-            height: 30px;
+            height: 50px;
             z-index: -2;
             left: 0;
-            top: 40px;
+            top: 45px;
             width: 100%;
         }
 
@@ -358,6 +377,60 @@ p {
         max-width: 400px;
         margin-top: auto;
         margin-left: auto;
+    }
+
+    @media screen and (max-width: 1441px) {
+        &__content {
+            h1 {
+                font-size: 90px;
+                line-height: 80px;
+            }
+
+            span {
+                top: 20px;
+            }
+        }
+
+        &-image {
+            transform: scale(0.9);
+            right: 50px;
+            top: 100px;
+        }
+
+        .grey-background {
+            height: 47.7%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        height: 700px;
+        .grey-background{
+            height: 35%;
+        }
+        .shadow {
+            bottom: -60px;
+            left: 0;
+        }
+        &-image {
+            top: 50px;
+            right: 0;
+            transform: scale(0.8);
+        }
+
+        &__content {
+            position: relative;
+            top: 0;
+            transform: none;
+            margin-top: 450px;
+
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            padding: 0 20px;
+            
+        }
     }
 }
 
@@ -794,7 +867,6 @@ p {
     }
 
     .active-service {
-        
         h2 {
             color: $green;
             text-decoration: line-through;
@@ -831,9 +903,9 @@ p {
         display: none;
     }
 }
-.services .mobile-content{
 
-}
+.services .mobile-content {}
+
 .active-service .mobile-content {
     display: block !important;
 }
@@ -1265,21 +1337,7 @@ p {
     }
 
     .hero {
-        height: 720px;
         margin-bottom: 0;
-
-        #canvasOne {
-            width: 100%;
-            top: -350px;
-        }
-
-        &__content {
-            margin: 0px 20px;
-        }
-
-        h1 {
-            font-size: 42px;
-        }
 
         h3 {
             font-size: 20px;

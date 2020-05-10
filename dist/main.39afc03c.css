@@ -46,9 +46,8 @@ p {
 }
 .navbar__responsive {
   z-index: 100;
-  background-color: white;
   display: flex;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -64,7 +63,6 @@ p {
 }
 .navbar__responsive__left button {
   margin: auto;
-  margin-right: 20px;
   border: none;
   font-size: 48px;
   background: none;
@@ -209,28 +207,46 @@ p {
   max-width: 1920px;
   margin: 0 auto;
   margin-bottom: 200px;
-  height: 100vh;
+  height: 1080px;
   display: flex;
   position: relative;
 }
-.hero #canvasOne {
+.hero .grey-background {
   position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   bottom: 0;
+  top: 0;
+  height: 54.2%;
+  width: 100%;
+  background: #dddddd;
+}
+.hero-image {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  transform: scale(1.1);
+  object-fit: cover;
+}
+.hero-image .shadow {
+  position: absolute;
+  bottom: -120px;
+  left: -100px;
 }
 .hero__content {
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
 }
 .hero__content h1 {
-  font-size: 62px;
-  font-weight: bold;
+  font-size: 142px;
+  line-height: 110px;
   margin-bottom: 0;
   position: relative;
+  font-weight: 600;
+}
+.hero__content h1 b {
+  font-weight: 900;
 }
 .hero__content .language {
   color: black;
@@ -252,10 +268,10 @@ p {
 .hero__content span {
   background: #5cf291;
   position: absolute;
-  height: 30px;
+  height: 50px;
   z-index: -2;
   left: 0;
-  top: 40px;
+  top: 45px;
   width: 100%;
 }
 .hero__content h3 {
@@ -306,6 +322,51 @@ p {
 .hero__text-right h1 {
   text-transform: uppercase;
   font-weight: 600;
+}
+@media screen and (max-width: 1441px) {
+  .hero__content h1 {
+    font-size: 90px;
+    line-height: 80px;
+  }
+  .hero__content span {
+    top: 20px;
+  }
+  .hero-image {
+    transform: scale(0.9);
+    right: 50px;
+    top: 100px;
+  }
+  .hero .grey-background {
+    height: 47.7%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero {
+    height: 700px;
+  }
+  .hero .grey-background {
+    height: 35%;
+  }
+  .hero .shadow {
+    bottom: -60px;
+    left: 0;
+  }
+  .hero-image {
+    top: 50px;
+    right: 0;
+    transform: scale(0.8);
+  }
+  .hero__content {
+    position: relative;
+    top: 0;
+    transform: none;
+    margin-top: 450px;
+    padding: 0 20px;
+  }
+  .hero__content h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 .margin-left-30 {
@@ -1080,18 +1141,7 @@ p {
   }
 
   .hero {
-    height: 720px;
     margin-bottom: 0;
-  }
-  .hero #canvasOne {
-    width: 100%;
-    top: -350px;
-  }
-  .hero__content {
-    margin: 0px 20px;
-  }
-  .hero h1 {
-    font-size: 42px;
   }
   .hero h3 {
     font-size: 20px;
