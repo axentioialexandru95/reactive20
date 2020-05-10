@@ -464,6 +464,7 @@ p {
         .grey-background {
             height: 47.7%;
         }
+        margin-bottom: 0;
     }
 
     @media screen and (max-width: 640px) {
@@ -1274,7 +1275,9 @@ p {
         width: 40px;
         object-fit: contain;
     }
-
+    .about-section  img{
+        width: 100px;
+    }
     .about-section p {
         margin-bottom: 0;
         max-width: 300px;

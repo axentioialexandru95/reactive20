@@ -389,6 +389,9 @@ p {
   font-weight: 600;
 }
 @media screen and (max-width: 1441px) {
+  .hero {
+    margin-bottom: 0;
+  }
   .hero__content h1 {
     font-size: 90px;
     line-height: 80px;
@@ -1091,6 +1094,9 @@ p {
   height: 40px;
   width: 40px;
   object-fit: contain;
+}
+.footer .about-section img {
+  width: 100px;
 }
 .footer .about-section p {
   margin-bottom: 0;
