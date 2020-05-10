@@ -543,7 +543,6 @@ p {
 }
 .about {
   max-width: 1920px;
-  min-height: 800px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -551,27 +550,39 @@ p {
 }
 .about__text-left {
   margin: auto 0;
-  width: 40%;
+  width: 50%;
+}
+.about__text-left h1 {
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 640px) {
   .about__text-left {
     width: 100%;
   }
+  .about__text-left h1 {
+    margin-bottom: 20px;
+  }
 }
 .about__image-right {
-  width: 60%;
+  width: 50%;
   position: relative;
+  display: flex;
   top: 0;
 }
 .about__image-right img {
+  margin: auto 0;
   padding: 0 20px;
-  position: absolute;
   width: 100%;
-  object-fit: cover;
-  height: 100%;
+  height: auto;
 }
 @media screen and (max-width: 640px) {
   .about__image-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about img {
+    max-width: 300px;
     width: 100%;
   }
 }
