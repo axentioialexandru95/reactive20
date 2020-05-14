@@ -630,7 +630,7 @@ p {
 }
 
 .blog {
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 50px auto;
 
     &__content {
@@ -662,6 +662,7 @@ p {
     &__post {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
 
         img {
             margin-top: 0 !important;
@@ -671,7 +672,7 @@ p {
         }
 
         .blog__content {
-            padding: 0 100px;
+            padding: 0 60px;
         }
     }
 
@@ -729,10 +730,50 @@ p {
     }
 
     @media screen and (max-width: 1920px) {
-        margin: 50px;
+        margin: 50px auto;
     }
+    @media screen and (max-width:640px){
+        margin: 0 20px;
+        &--large{
+            margin-top: 100px;
+            hr{
+                margin-top: 50px;
+            }
+        }
 
-    @media screen and (max-width: 480px) {}
+        &__content{ 
+            h1{
+                font-size: 32px;
+                margin-top: 20px !important;
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                font-size: 20px;
+                letter-spacing: 7px;
+                &::after{
+                    top: 40%;
+                }
+            }
+        }
+        &__post{
+            img{
+                width: 100%;
+            }
+            .blog__content{
+                width: 100%;
+                padding: 0;
+            }
+        }
+        hr{
+            height: 2px;
+            border-top: 2px solid black;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+    }
 }
 
 .about {
@@ -1370,7 +1411,7 @@ p {
     }
 
     .about-section img {
-        width: 100px;
+        width: 70px;
     }
 
     .about-section p {
@@ -1772,5 +1813,18 @@ p {
     @media screen and (max-width: 767px) {
         margin: 0 !important;
         width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width:1800px){
+    .hero__content{
+        h1{
+            line-height: 80px;
+            font-size: 100px;
+            span{
+                top: 25px;
+            }
+        }
     }
 }

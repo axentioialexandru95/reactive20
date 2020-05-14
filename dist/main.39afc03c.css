@@ -532,7 +532,7 @@ p {
 }
 
 .blog {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 50px auto;
 }
 .blog__content {
@@ -559,6 +559,7 @@ p {
 .blog__post {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 .blog__post img {
   margin-top: 0 !important;
@@ -567,7 +568,7 @@ p {
   object-fit: cover;
 }
 .blog__post .blog__content {
-  padding: 0 100px;
+  padding: 0 60px;
 }
 .blog--large {
   margin-top: 200px;
@@ -614,9 +615,48 @@ p {
 }
 @media screen and (max-width: 1920px) {
   .blog {
-    margin: 50px;
+    margin: 50px auto;
   }
 }
+@media screen and (max-width: 640px) {
+  .blog {
+    margin: 0 20px;
+  }
+  .blog--large {
+    margin-top: 100px;
+  }
+  .blog--large hr {
+    margin-top: 50px;
+  }
+  .blog__content h1 {
+    font-size: 32px;
+    margin-top: 20px !important;
+  }
+  .blog__content p {
+    font-size: 20px;
+  }
+  .blog__content a {
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+  .blog__content a::after {
+    top: 40%;
+  }
+  .blog__post img {
+    width: 100%;
+  }
+  .blog__post .blog__content {
+    width: 100%;
+    padding: 0;
+  }
+  .blog hr {
+    height: 2px;
+    border-top: 2px solid black;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .about {
   max-width: 1920px;
   margin: 0 auto;
@@ -1171,7 +1211,7 @@ p {
   object-fit: contain;
 }
 .footer .about-section img {
-  width: 100px;
+  width: 70px;
 }
 .footer .about-section p {
   margin-bottom: 0;
@@ -1522,6 +1562,16 @@ p {
   .column--7 {
     margin: 0 !important;
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .hero__content h1 {
+    line-height: 80px;
+    font-size: 100px;
+  }
+  .hero__content h1 span {
+    top: 25px;
   }
 }
 
