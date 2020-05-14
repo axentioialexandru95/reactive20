@@ -4,9 +4,11 @@ $gray: #c4c4c4;
 .row-50 {
     padding: 0 100px;
 }
-p{
+
+p {
     font-weight: 200;
 }
+
 body, html {
     overflow-x: hidden;
 }
@@ -52,7 +54,8 @@ p {
             padding: 0 50px;
         }
     }
-    &__responsive-content{
+
+    &__responsive-content {
         display: none;
         position: fixed;
         width: 100%;
@@ -61,34 +64,40 @@ p {
         left: 0;
         right: 0;
         text-align: center;
-        .inner-content{
+
+        .inner-content {
             margin: auto 0;
             color: white;
             width: 100%;
-            img{
+
+            img {
                 position: relative;
                 margin-bottom: 50px;
                 height: fit-content;
                 width: 100%;
                 max-height: 100px;
             }
-            ul{
+
+            ul {
                 list-style: none;
                 margin: 0;
                 padding: 0;
                 width: 100%;
-                li a{
+
+                li a {
                     display: block;
                     width: 100%;
                     color: white;
                     font-size: 42px;
-                    &:hover, &:focus{
+
+                    &:hover, &:focus {
                         text-decoration: none;
                         color: $green;
                     }
                 }
             }
-            .social{
+
+            .social {
                 position: absolute;
                 bottom: 0;
                 left: 50%;
@@ -98,12 +107,14 @@ p {
                 max-width: 150px;
                 margin: 0 auto;
                 margin-top: 20px;
-                a{
+
+                a {
                     display: block;
                     width: 100%;
                     color: white;
                     font-size: 42px;
-                    &:hover, &:focus{
+
+                    &:hover, &:focus {
                         text-decoration: none;
                         color: $green;
                     }
@@ -111,6 +122,7 @@ p {
             }
         }
     }
+
     &__responsive {
         z-index: 100;
         display: flex;
@@ -119,7 +131,7 @@ p {
         top: 0;
         right: 0;
         justify-content: space-between;
-        
+
         &__left {
             background: black;
             display: flex;
@@ -150,7 +162,8 @@ p {
                     margin: auto;
                 }
             }
-            .navbar__responsive__burger{
+
+            .navbar__responsive__burger {
                 height: fit-content;
             }
 
@@ -252,7 +265,8 @@ p {
             &:hover {
                 color: $green;
                 text-decoration: none;
-                .logo-svg{
+
+                .logo-svg {
                     transition: 0.2s ease-in-out;
                     fill: $green;
                 }
@@ -470,6 +484,7 @@ p {
         .grey-background {
             height: 47.7%;
         }
+
         margin-bottom: 0;
     }
 
@@ -736,13 +751,13 @@ p {
 
         @media screen and (max-width: 640px) {
             width: 100%;
-            h1{
+
+            h1 {
                 margin-bottom: 20px;
             }
         }
     }
 
-    
     &__image-right {
         width: 50%;
         position: relative;
@@ -758,14 +773,13 @@ p {
 
         @media screen and (max-width: 640px) {
             width: 100%;
-            
         }
     }
 
     margin-bottom: 300px;
-    @media screen and (max-width:640px){
-        img{
 
+    @media screen and (max-width: 640px) {
+        img {
             max-width: 300px;
             width: 100%;
         }
@@ -783,6 +797,7 @@ p {
         .column {
             width: 50%;
             display: flex;
+
             @media screen and (max-width: 640px) {
                 text-align: center;
                 width: 100%;
@@ -815,26 +830,30 @@ p {
     margin: 0 auto;
     position: relative;
 
-    &__column{
+    &__column {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         column-gap: 20px;
     }
-    .row--flex .column{
+
+    .row--flex .column {
         display: block;
         margin: 50px 0px;
     }
-    &__content-title{
+
+    &__content-title {
         margin-top: 100px;
         margin-bottom: 0;
     }
-    &__content-subtitle{
+
+    &__content-subtitle {
         margin-top: 0;
         text-align: center;
         color: white;
         font-size: 48px;
         margin-bottom: 100px;
     }
+
     &-overlay {
         ion-icon {
             color: black;
@@ -885,6 +904,7 @@ p {
         bottom: 0;
         overflow-y: scroll;
         overflow-x: visible;
+
         img {
             width: 100%;
             border: none;
@@ -896,7 +916,7 @@ p {
             }
         }
 
-        h1, p {
+        h1, h2, p {
             color: white;
         }
 
@@ -917,18 +937,48 @@ p {
 
     &__content {
         margin: auto 0;
-        &-title{
+
+        &-title {
             font-size: 120px;
             font-weight: 600;
         }
-        &-subtitle{
+
+        &-subtitle {
             font-weight: 300;
             font-size: 46px;
             text-transform: capitalize;
         }
     }
-    @media screen and (max-width:1920px){
+
+    @media screen and (max-width: 1920px) {
         padding: 0 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &-content {
+            margin: 50px 0;
+        }
+
+        &-content h1 {
+            font-size: 52px;
+        }
+
+        &__content-title {
+            margin-top: 50px;
+        }
+
+        &__content-subtitle {
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+        p{
+            padding: 0;
+            font-size: 18px;
+        }
+        h2{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -1013,7 +1063,7 @@ p {
 .services .mobile-content {}
 
 .active-service .mobile-content {
-    @media screen and (max-width:640px){
+    @media screen and (max-width: 640px) {
         display: block !important;
     }
 }
@@ -1024,7 +1074,6 @@ p {
 
 .services__content.active-content {
     display: block;
-    
 }
 
 .separator {
@@ -1302,9 +1351,11 @@ p {
         width: 40px;
         object-fit: contain;
     }
-    .about-section  img{
+
+    .about-section img {
         width: 100px;
     }
+
     .about-section p {
         margin-bottom: 0;
         max-width: 300px;
@@ -1416,14 +1467,6 @@ p {
     animation-iteration-count: infinite;
 }
 
-.column--3{
-    width: 30% !important;
-}
-
-.column--7{
-    width: 70% !important;
-}
-
 @keyframes scroll {
     0% {
         opacity: 0;
@@ -1514,7 +1557,7 @@ p {
         margin: 0 20px;
 
         p {
-            padding: 0 30px;
+            padding: 0 10px;
         }
 
         &__grid {
@@ -1673,11 +1716,30 @@ p {
     }
 }
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     color: white;
     background-color: white;
 }
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before{
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
     color: white;
     background-color: white;
+}
+
+.column--3 {
+    width: 30% !important;
+
+    @media screen and (max-width: 767px) {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+}
+
+.column--7 {
+    width: 70% !important;
+
+    @media screen and (max-width: 767px) {
+        margin: 0 !important;
+        width: 100% !important;
+    }
 }
