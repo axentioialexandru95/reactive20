@@ -1541,6 +1541,18 @@ p {
     }
 }
 
+@media screen and (max-width:1800px){
+    .hero__content{
+        h1{
+            line-height: 80px;
+            font-size: 100px;
+            span{
+                top: 25px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 767px) {
     p {
         font-size: 20px;
@@ -1817,17 +1829,6 @@ p {
 }
 
 
-@media screen and (max-width:1800px){
-    .hero__content{
-        h1{
-            line-height: 80px;
-            font-size: 100px;
-            span{
-                top: 25px;
-            }
-        }
-    }
-}
 
 @media screen and (max-width:640px){
     .post__header{
