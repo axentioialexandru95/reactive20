@@ -5,45 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reactive20 - Blog</title>
     <link rel="stylesheet" href="/uikit.min.2daa7517.css">
+    <link rel="icon" type="image/png" href="/apple-touch-icon.03823372.png">
+    <link rel="stylesheet" href="/fonts.b13d561a.css">
+    <link rel="stylesheet" href="/burger.d9244166.css">
     <link rel="stylesheet" href="/main.39afc03c.css">
   </head>
   <body>
     <div class="underlay"></div>
 
-    <!-- Navbar -->
-    <div class="navbar">
+     <!-- Navbar -->
+     <div class="navbar uk-visible@s">
       <div class="uk-animation-slide-top-small navbar__left-container">
         <div class="row-50 navbar__links">
           <div class="navbar__logo navbar__link uk-animation-slide-top-small" style="animation-delay: 200ms;">
             <a href="/home">
-              <img src="/logo.236e4034.svg" alt="Reactive20 logo">
+              <object data="" type="">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.5 503.95">
+                  <defs>
+                    <style>.logo-svg {
+                        fill: #fff;
+                      }</style>
+                  </defs>
+                  <title>logo reactiveALB2</title>
+                  <rect class="logo-svg" y="403.24" width="244.88" height="100.71"></rect>
+                  <path class="logo-svg" d="M145.67,0V364.21h321.4c100.57,0,182.1-81.53,182.1-182.11h0A182.1,182.1,0,0,0,467.07,0ZM467.05,263.49H246.35V100.68h220.7a81.41,81.41,0,0,1,81.41,81.41h0A81.41,81.41,0,0,1,467.05,263.49Z" transform="translate(-145.67)"></path>
+                  <path class="logo-svg" d="M509.87,403h38.59A100.71,100.71,0,0,1,649.17,503.73H509.87Z" transform="translate(-145.67)"></path>
+                </svg>
+              </object>
             </a>
-          </div>
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 500ms;">
-            <a href="/">Home</a>
-          </div>
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 600ms;">
-            <a href="#about">About</a>
-          </div>
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 700ms;">
-            <a href="#portfolio">Portfolio</a>
-          </div>
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 800ms;">
-            <a href="#services">Services</a>
           </div>
         </div>
       </div>
       <div class="uk-animation-slide-top-small navbar__right-container" style="animation-delay: 200ms;">
-        <div class="navbar__links">
-          <div class="navbar__link uk-animation-slide-top-small" style="animation-delay: 900ms;">
-            <a href="/blog.html">Blog</a>
-          </div>
-        </div>
-        <div class="row-50 navbar__links uk-animation-slide-left-small navbar__links--language" style="animation-delay: 1000ms;">
+        <div class="row-50 navbar__links uk-animation-slide-left-small navbar__links--language" style="animation-delay: 400ms;">
           <a class="active" href="/en">RO </a>
           <span>/</span>
           <a href="/en">EN</a>
         </div>
+      </div>
+    </div>
+    <div class="navbar__responsive uk-hidden@s">
+      <div class="navbar__responsive__left">
+        <div class="navbar__responsive__burger">
+          <button class="uk-animation-slide-left-small hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="navbar__responsive-content uk-hidden@s">
+          <div class="inner-content">
+            <img src="/logo.236e4034.svg" class="uk-animation-slide-left-small" style="animation-delay: 100ms;" alt="" srcset="">
+            <ul>
+              <li class="uk-animation-slide-left-small" style="animation-delay: 200ms;">
+                <a href="#">Home</a>
+              </li>
+              <li class="uk-animation-slide-left-small" style="animation-delay: 300ms;">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <a href="#" class="uk-animation-slide-left-small" style="animation-delay: 400ms;"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#" class="uk-animation-slide-left-small" style="animation-delay: 500ms;"><ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__responsive__right">
+        <a class="active" href="/en">RO </a>
+        <span>/</span>
+        <a href="/en">EN</a>
       </div>
     </div>
     <!-- Navbar -->
@@ -51,7 +83,7 @@
     <img class="post__header" src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
     <div class="post__content">
       <hr>
-      <div class="post__share">
+      <div class="post__share uk-visible@s">
         <h4>Share this</h4>
         <div class="row row--flex">
           <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -80,6 +112,13 @@
           tempore, numquam deleniti dolore ut ad earum assumenda. Unde officiis
           cupiditate vero quia tempore.
         </p>
+      </div>
+      <div class="post__share uk-hidden@s share--left">
+        <h4>Share this</h4>
+        <div class="row row--flex">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
       </div>
       <hr>
     </div>

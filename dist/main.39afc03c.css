@@ -1574,5 +1574,34 @@ p {
     top: 25px;
   }
 }
+@media screen and (max-width: 640px) {
+  .post__header {
+    margin: 0;
+    margin-top: 80px;
+    height: 30vh;
+  }
+
+  .post__content {
+    padding: 50px 10px;
+  }
+
+  .post__description {
+    margin: 50px 0px;
+  }
+
+  .post__share.share--left {
+    position: relative;
+    left: 0;
+    margin-top: 0;
+  }
+  .post__share.share--left a {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .post__share.share--left .row {
+    margin: 0;
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
