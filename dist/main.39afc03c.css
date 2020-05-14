@@ -2,6 +2,10 @@
   padding: 0 100px;
 }
 
+p {
+  font-weight: 200;
+}
+
 body, html {
   overflow-x: hidden;
 }
@@ -671,10 +675,6 @@ p {
   width: 50%;
   display: flex;
 }
-.row--flex .column h1 {
-  margin: auto 0;
-  height: fit-content;
-}
 @media screen and (max-width: 640px) {
   .row--flex .column {
     text-align: center;
@@ -705,6 +705,26 @@ p {
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
+}
+.portfolio__column {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  column-gap: 20px;
+}
+.portfolio .row--flex .column {
+  display: block;
+  margin: 50px 0px;
+}
+.portfolio__content-title {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+.portfolio__content-subtitle {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 100px;
 }
 .portfolio-overlay ion-icon {
   color: black;
@@ -787,6 +807,11 @@ p {
   font-weight: 300;
   font-size: 46px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 1920px) {
+  .portfolio {
+    padding: 0 50px;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -1202,6 +1227,14 @@ p {
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
+}
+
+.column--3 {
+  width: 30% !important;
+}
+
+.column--7 {
+  width: 70% !important;
 }
 
 @keyframes scroll {

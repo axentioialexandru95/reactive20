@@ -69,12 +69,11 @@ $(document).ready(function () {
 
 
     const servicesDropdown = function () {
-
         let activeIndex = 0;
         const servicesContent = $('.services__content');
         const dropdownButtons = $('.services__buttons h2');
         const activeDropdown = $('.services__content.active-service');
-
+        
         dropdownButtons.each((i, el) => {
             $(el).on('click', (evt) => {
                 const element = $(evt.currentTarget).parent();
