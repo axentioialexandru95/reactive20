@@ -660,6 +660,7 @@ p {
   .about img {
     max-width: 300px;
     width: 100%;
+    margin: auto;
   }
 }
 
@@ -710,6 +711,11 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   column-gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .portfolio__column {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .portfolio .row--flex .column {
   display: block;
@@ -902,6 +908,18 @@ p {
 }
 .services .mobile-content {
   display: none;
+}
+@media screen and (max-width: 640px) {
+  .services h2 {
+    font-size: 22px;
+  }
+  .services .logo-list img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1272,7 +1290,7 @@ p {
 }
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
 
   .row-50 {
@@ -1280,10 +1298,22 @@ p {
   }
 
   .hero {
+    height: 600px;
     margin-bottom: 0;
   }
   .hero h3 {
     font-size: 20px;
+  }
+  .hero__content {
+    margin-top: 400px;
+  }
+  .hero__content h1 {
+    font-size: 42px;
+    line-height: 38px;
+  }
+  .hero__content span {
+    height: 25px;
+    top: 10px;
   }
 
   .work-process {
@@ -1350,10 +1380,11 @@ p {
   }
   .services h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
   }
   .services h2 {
     margin-bottom: 20px;
+    letter-spacing: 5px;
   }
   .services__content-row {
     margin-top: 30px;
@@ -1376,7 +1407,7 @@ p {
     flex-wrap: wrap;
   }
   .services .logo-list img {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .faq__container-left {
@@ -1457,6 +1488,7 @@ p {
 
   .footer__content {
     flex-wrap: wrap;
+    padding: 50px 0px;
   }
   .footer .about-section, .footer .summary-section, .footer .terms-section, .footer .social-section {
     width: 100%;

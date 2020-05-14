@@ -782,6 +782,7 @@ p {
         img {
             max-width: 300px;
             width: 100%;
+            margin: auto;
         }
     }
 }
@@ -834,6 +835,10 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         column-gap: 20px;
+        @media screen and (max-width:640px){
+            grid-template-columns: repeat(1, 1fr);
+        
+        }
     }
 
     .row--flex .column {
@@ -1057,6 +1062,18 @@ p {
 
     .mobile-content {
         display: none;
+    }
+    @media screen and (max-width:640px){
+        h2 {
+            font-size: 22px;
+        }
+        .logo-list img{
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -1491,7 +1508,7 @@ p {
 
 @media screen and (max-width: 640px) {
     h1 {
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .row-50 {
@@ -1499,10 +1516,22 @@ p {
     }
 
     .hero {
+        height: 600px;
         margin-bottom: 0;
 
         h3 {
             font-size: 20px;
+        }
+        &__content{
+            margin-top: 400px;
+            h1{
+                font-size: 42px;
+                line-height: 38px;
+            }
+            span{
+                height: 25px;
+                top: 10px;
+            }
         }
     }
 
@@ -1575,11 +1604,12 @@ p {
 
         h1 {
             text-align: center;
-            font-size: 24px;
+            font-size: 32px;
         }
 
         h2 {
             margin-bottom: 20px;
+            letter-spacing: 5px;
         }
 
         &__content-row {
@@ -1608,7 +1638,7 @@ p {
             flex-wrap: wrap;
 
             img {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -1707,6 +1737,7 @@ p {
     .footer {
         &__content {
             flex-wrap: wrap;
+            padding: 50px 0px;
         }
 
         .about-section, .summary-section, .terms-section, .social-section {
