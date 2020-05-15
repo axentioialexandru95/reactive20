@@ -3,15 +3,15 @@ function fitElementToParent(el, padding) {
     var timeout = null;
     function resize() {
       if (timeout) clearTimeout(timeout);
-      anime.set(el, {scale: 1});
+      anime.set(el, {scale: 0.5});
       var pad = padding || 0;
       var parentEl = el.parentNode;
       var elOffsetWidth = el.offsetWidth - pad;
       var parentOffsetWidth = parentEl.offsetWidth;
       console.log('parentOffsetWidth:', parentOffsetWidth)
       console.log('elOffsetWidth:', elOffsetWidth)
-      var ratio = parentOffsetWidth / (elOffsetWidth + 100);
-      timeout = setTimeout(anime.set(el, {scale: ratio}), 7);
+      var ratio = '1';
+      timeout = setTimeout(anime.set(el, {scale: ratio}), 10);
     }
     resize();
     window.addEventListener('resize', resize);

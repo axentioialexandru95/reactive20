@@ -1871,7 +1871,7 @@ function fitElementToParent(el, padding) {
     if (timeout) clearTimeout(timeout);
 
     _animejs.default.set(el, {
-      scale: 1
+      scale: 0.5
     });
 
     var pad = padding || 0;
@@ -1880,10 +1880,10 @@ function fitElementToParent(el, padding) {
     var parentOffsetWidth = parentEl.offsetWidth;
     console.log('parentOffsetWidth:', parentOffsetWidth);
     console.log('elOffsetWidth:', elOffsetWidth);
-    var ratio = parentOffsetWidth / (elOffsetWidth + 100);
+    var ratio = '1';
     timeout = setTimeout(_animejs.default.set(el, {
       scale: ratio
-    }), 7);
+    }), 10);
   }
 
   resize();
@@ -1989,7 +1989,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64188" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59482" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

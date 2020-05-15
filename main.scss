@@ -9,8 +9,13 @@ p {
     font-weight: 200;
 }
 
+input, textarea, button{
+    font-family: "TTCommons";
+}
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 h1 {
@@ -324,7 +329,6 @@ p {
 .hero {
     max-width: 1920px;
     margin: 0 auto;
-    margin-bottom: 200px;
     height: 1080px;
     display: flex;
     position: relative;
@@ -581,7 +585,7 @@ p {
         right: 0;
         font-weight: bold;
         margin-top: 100px;
-        padding-right: 50px;
+        padding-right: 100px;
 
         .row {
             margin: 0;
@@ -662,7 +666,6 @@ p {
     &__post {
         position: relative;
         display: flex;
-        flex-wrap: wrap;
 
         img {
             margin-top: 0 !important;
@@ -732,55 +735,65 @@ p {
     @media screen and (max-width: 1920px) {
         margin: 50px auto;
     }
-    @media screen and (max-width:640px){
+
+    @media screen and (max-width: 640px) {
         margin: 0 20px;
-        &--large{
+
+        &--large {
             margin-top: 100px;
-            hr{
+
+            hr {
                 margin-top: 50px;
             }
         }
 
-        &__content{ 
-            h1{
+        &__content {
+            h1 {
                 font-size: 32px;
                 margin-top: 20px !important;
             }
-            p{
+
+            p {
                 font-size: 20px;
             }
-            a{
+
+            a {
                 font-size: 20px;
                 letter-spacing: 7px;
-                &::after{
+
+                &::after {
                     top: 40%;
                 }
             }
         }
-        &__post{
-            img{
+
+        &__post {
+            img {
                 width: 100%;
             }
-            .blog__content{
+
+            .blog__content {
                 width: 100%;
                 padding: 0;
             }
+            flex-wrap: wrap;
+
         }
-        hr{
+
+        hr {
             height: 2px;
             border-top: 2px solid black;
             width: 100%;
             max-width: 100%;
         }
-        
     }
 }
 
 .about {
     max-width: 1920px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 200px 100px;
 
     &__text-left {
         margin: auto 0;
@@ -876,9 +889,9 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         column-gap: 20px;
-        @media screen and (max-width:640px){
+
+        @media screen and (max-width: 640px) {
             grid-template-columns: repeat(1, 1fr);
-        
         }
     }
 
@@ -1017,11 +1030,13 @@ p {
             margin-bottom: 50px;
             font-size: 18px;
         }
-        p{
+
+        p {
             padding: 0;
             font-size: 18px;
         }
-        h2{
+
+        h2 {
             font-size: 22px;
             margin-bottom: 20px;
         }
@@ -1104,11 +1119,13 @@ p {
     .mobile-content {
         display: none;
     }
-    @media screen and (max-width:640px){
+
+    @media screen and (max-width: 640px) {
         h2 {
             font-size: 22px;
         }
-        .logo-list img{
+
+        .logo-list img {
             height: 20px;
             width: 20px;
             object-fit: contain;
@@ -1135,9 +1152,37 @@ p {
 }
 
 .separator {
+    opacity: 0;
     max-width: 1920px;
     margin: 170px auto;
     text-align: center;
+    .text-block{
+        margin: auto;
+        background-color: #1A1A1A;
+        width: fit-content;
+        padding: 20px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: ' ';
+            background-color: #1A1A1A;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            right: -50%;
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        }
+    }
+    h1{
+        text-align: left;
+        margin: 0;
+        color:white;
+        line-height: 30px;
+        &:nth-child(even){
+            color: $green;
+        }
+    }
 }
 
 .work-process {
@@ -1375,6 +1420,10 @@ p {
             text-decoration: none;
             color: $green;
         }
+
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+        }
     }
 
     ion-icon {
@@ -1391,6 +1440,10 @@ p {
         margin-bottom: 35px;
         font-size: 32px;
         list-style: none;
+
+        @media screen and (max-width: 640px) {
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -1541,12 +1594,13 @@ p {
     }
 }
 
-@media screen and (max-width:1800px){
-    .hero__content{
-        h1{
+@media screen and (max-width: 1800px) {
+    .hero__content {
+        h1 {
             line-height: 80px;
             font-size: 100px;
-            span{
+
+            span {
                 top: 25px;
             }
         }
@@ -1575,13 +1629,16 @@ p {
         h3 {
             font-size: 20px;
         }
-        &__content{
+
+        &__content {
             margin-top: 400px;
-            h1{
-                font-size: 42px;
+
+            h1 {
+                font-size: 38px;
                 line-height: 38px;
             }
-            span{
+
+            span {
                 height: 25px;
                 top: 10px;
             }
@@ -1828,65 +1885,76 @@ p {
     }
 }
 
-
-
-@media screen and (max-width:640px){
-    .post__header{
+@media screen and (max-width: 640px) {
+    .post__header {
         margin: 0;
         margin-top: 80px;
         height: 30vh;
     }
-    .post__content{
+
+    .post__content {
         padding: 50px 10px;
     }
-    .post__description{
+
+    .post__description {
         margin: 50px 0px;
     }
 
-    .post__share.share--left{
+    .post__share.share--left {
         position: relative;
         left: 0;
         margin-top: 0;
-        a{
+
+        a {
             margin-right: 15px;
             margin-left: 0;
         }
-        .row{
+
+        .row {
             margin: 0;
             flex-direction: row;
         }
     }
 
+    .margin-left-30 {
+        margin-left: 0;
+        margin: 100px 10px;
+    }
 }
-
 
 // -------------
 
 .animation-wrapper {
-    width: 50%;
-    padding-bottom: 50%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 50%;
-  }
-  
-  .sphere-animation {
+}
+
+.sphere-animation {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 580px;
     height: 580px;
-    margin: -290px 0 0 -290px;
-  }
-  
-  .sphere path {
+    right: 10%;
+    top: 20%;
+    transform: scale(1.2) !important;
+    @media screen and (max-width: 640px) {
+        top: 10%;
+        left: 50%;
+        height: 300px;
+        width: 300px;
+        transform: translateX(-50%) !important;
+    }
+}
+
+.sphere path {
     fill: url(#sphereGradient);
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.35);
     backface-visibility: hidden;
-  }
-  
-  @media (min-width: 500px) {
+}
+
+@media (min-width: 500px) {
     .sphere path {
-      stroke-width: .4px;
+        stroke-width: .4px;
     }
-  }
+}

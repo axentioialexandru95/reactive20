@@ -1,3 +1,6 @@
+import anime from 'animejs';
+import waypoint from './node_modules/waypoints/lib/jquery.waypoints';
+
 $(document).ready(function () {
     const portfolioItems = $('.portfolio-overlay')
     const servicesContentColumnIds = document.querySelectorAll('.services__content-column h2')
@@ -153,5 +156,30 @@ $(document).ready(function () {
     scrollSpyAction(scrollSpyContainer)
     servicesDropdown();
     navbarResponsive();
+
+    const separatorText = new Waypoint({
+        element: $('.separator'),
+        offset: '75%',
+        handler: (direction) => {
+            if (direction === 'down') {
+                anime({
+                    targets: '.separator',
+                    easing: 'easeOutExpo',
+                    translateX: [-100, 0],
+                    opacity: [0, 1],
+                    delay: 300
+                })
+                anime({
+                    targets: '.separator .text-block h1',
+                    easing: 'easeOutExpo',
+                    translateX: [-50, 0],
+                    opacity: [0, 1],
+                    offset: "+=1000",
+                    delay: anime.stagger(500)
+                })
+                separatorText.destroy()
+            }
+        }
+    })
 
 });
